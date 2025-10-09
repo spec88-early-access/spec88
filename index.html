@@ -4,25 +4,63 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>SPEC88 – Intelligente KI-Agenten für Unternehmen | Automatisierung in 14 Tagen</title>
-  <meta name="description" content="SPEC88 entwickelt maßgeschneiderte KI-Agenten für Unternehmen. Automatisiere Recherche, Kommunikation und Prozesse in wenigen Tagen – DSGVO-konform und sicher in Deutschland." />
-  <meta name="keywords" content="KI-Agenturen, Automatisierung, Chatbot, AI-Business, Deutschland, SPEC88" />
+  <meta name="description" content="SPEC88 entwickelt maßgeschneiderte KI-Agenten, die Recherche, Kommunikation und Prozesse automatisieren. In 14 Tagen live – DSGVO-konform und sicher in der EU." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://www.spec88.com/" />
+
   <!-- Open Graph -->
   <meta property="og:title" content="SPEC88 – Intelligente KI-Agenten für Unternehmen" />
   <meta property="og:description" content="Automatisiere Recherche, Kommunikation und Reporting – maßgeschneidert für dein Unternehmen." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.spec88.com/" />
   <meta property="og:image" content="https://www.spec88.com/og-spec88.jpg" />
-  <!-- Twitter Cards -->
+
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="SPEC88 – Intelligente KI-Agenten für Unternehmen" />
-  <meta name="twitter:description" content="Automatisiere Recherche, Kommunikation und Prozesse in wenigen Tagen – DSGVO-konform und sicher in Deutschland." />
+  <meta name="twitter:description" content="Automatisiere Recherche, Kommunikation und Prozesse – DSGVO-konform, EU-Server." />
   <meta name="twitter:image" content="https://www.spec88.com/og-spec88.jpg" />
-  <!-- Fonts -->
+
+  <!-- Icons / Theme -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#090E16" />
+
+  <!-- Perf -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preload" as="image" href="/og-spec88.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SPEC88",
+    "url": "https://www.spec88.com/",
+    "logo": "https://www.spec88.com/apple-touch-icon.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Tulpenstraße 4",
+      "postalCode": "63128",
+      "addressLocality": "Dietzenbach",
+      "addressCountry": "DE"
+    },
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "email": "hello@spec88.com",
+      "telephone": "+49 163 8621972",
+      "areaServed": "DE"
+    }]
+  }
+  </script>
+
+  <!-- Fonts + Tailwind -->
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -35,17 +73,15 @@
             hover: '#3B82F6',
             darkblue: '#0A2540'
           },
-          fontFamily: {
-            sans: ['Manrope', 'Sora', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial']
-          },
-          boxShadow: {
-            soft: '0 10px 30px rgba(46,247,208,0.12)'
-          }
+          fontFamily: { sans: ['Manrope','Sora','ui-sans-serif','system-ui','Segoe UI','Roboto','Helvetica Neue','Arial'] },
+          boxShadow: { soft: '0 10px 30px rgba(46,247,208,0.12)' }
         }
       }
     }
   </script>
+
   <style>
+    html { scroll-behavior: smooth; }
     body {
       background:
         radial-gradient(1200px 600px at 20% -10%, rgba(46,247,208,0.08), transparent 60%),
@@ -53,22 +89,18 @@
         linear-gradient(180deg, #090E16 0%, #0A2540 100%);
       color:#F9FAFB;
     }
+    .container-lg { max-width:1200px; margin:0 auto; padding:0 1rem; }
     .glass { background: rgba(255,255,255,0.04); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.06); }
-    .container-lg { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
-    .btn { border-radius: 9999px; box-shadow: 0 6px 18px rgba(46,247,208,0.25); transition: transform .15s ease, box-shadow .2s ease; }
-    .btn:hover { transform: translateY(-1px); box-shadow: 0 10px 28px rgba(59,130,246,0.25); }
+    .btn { border-radius:9999px; box-shadow:0 6px 18px rgba(46,247,208,0.25); transition: transform .15s ease, box-shadow .2s ease; }
+    .btn:hover { transform: translateY(-1px); box-shadow:0 10px 28px rgba(59,130,246,0.25); }
     .badge { display:inline-block; border:1px solid rgba(255,255,255,0.12); padding:.35rem .6rem; border-radius:9999px; font-size:.8rem; }
-    /* Animated mesh lines (pure CSS) */
-    .mesh {
-      position:absolute; inset:-2px; pointer-events:none; opacity:.25; mask-image: radial-gradient(ellipse 120% 80% at 50% 0%, black 40%, transparent 70%);
-      background:
-        repeating-linear-gradient(90deg, rgba(46,247,208,.2) 0 1px, transparent 1px 32px),
-        repeating-linear-gradient(0deg, rgba(46,247,208,.2) 0 1px, transparent 1px 32px);
-      animation: drift 40s linear infinite;
+    .hero-visual { position:relative; overflow:hidden; border-radius:1.5rem; }
+    .hero-visual::before {
+      content:""; position:absolute; inset:0;
+      background: radial-gradient(60% 60% at 30% 30%, rgba(46,247,208,.18), transparent 60%),
+                  radial-gradient(60% 60% at 70% 40%, rgba(59,130,246,.18), transparent 60%),
+                  linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
     }
-    @keyframes drift { from { transform: translate3d(0,0,0) } to { transform: translate3d(-64px,-64px,0) } }
-    .logo-skeleton { background: linear-gradient(90deg, rgba(255,255,255,.06), rgba(255,255,255,.12), rgba(255,255,255,.06)); background-size:200% 100%; animation: shimmer 2s linear infinite; height: 28px; border-radius:6px; opacity:.6 }
-    @keyframes shimmer { from { background-position:200% 0 } to { background-position: -200% 0 } }
   </style>
 </head>
 <body class="font-sans antialiased">
@@ -84,114 +116,100 @@
       </a>
       <nav class="hidden md:flex items-center gap-8 text-sm">
         <a href="#features" class="opacity-80 hover:opacity-100">Funktionen</a>
+        <a href="#security" class="opacity-80 hover:opacity-100">Sicherheit</a>
         <a href="#process" class="opacity-80 hover:opacity-100">Ablauf</a>
         <a href="#tester" class="opacity-80 hover:opacity-100">Tester</a>
         <a href="#pricing" class="opacity-80 hover:opacity-100">Preise</a>
         <a href="#contact" class="opacity-80 hover:opacity-100">Kontakt</a>
       </nav>
       <div class="flex items-center gap-3">
-        <button onclick="scrollToId('contact')" class="btn bg-primary text-background font-semibold px-5 py-2 hover:bg-hover">Tester buchen</button>
+        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="btn bg-primary text-background font-semibold px-5 py-2 hover:bg-hover">Kostenlose Demo buchen</button>
       </div>
     </div>
   </header>
 
   <!-- Hero -->
   <section id="top" class="relative overflow-hidden">
-    <div class="mesh"></div>
     <div class="container-lg grid md:grid-cols-2 gap-10 items-center py-16 md:py-24">
       <div class="space-y-6">
         <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">
           Starte dein Business mit <span class="text-primary">intelligenten KI-Agenten</span>
         </h1>
-        <p class="text-lg md:text-xl text-white/80">Automatisiere Recherche, Kommunikation und Reporting – maßgeschneidert für dein Unternehmen.</p>
+        <p class="text-lg md:text-xl text-white/80">Automatisiere Recherche, Kommunikation und Reporting – <strong>in 14 Tagen live</strong>, maßgeschneidert für dein Unternehmen.</p>
         <div class="flex items-center gap-3">
-          <span class="badge text-white/80">Einmaliger Tester: <strong class="text-primary">249 €</strong> (zzgl. MwSt.) – schnelle Umsetzung (remote), deckt Einrichtung & Erstellung + sonstige Kosten.</span>
+          <span class="badge text-white/80">Pilot-Test: <strong class="text-primary">249 €</strong> (zzgl. MwSt.) – remote, deckt Einrichtung & Demo.</span>
         </div>
         <div class="flex flex-col sm:flex-row gap-4">
-          <button onclick="scrollToId('contact')" class="btn bg-primary text-background font-semibold px-6 py-3 hover:bg-hover">Tester buchen</button>
+          <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="btn bg-primary text-background font-semibold px-6 py-3 hover:bg-hover">Kostenlose Demo buchen</button>
           <a href="#features" class="px-6 py-3 rounded-full border border-white/10 hover:border-primary/50">Mehr erfahren</a>
         </div>
         <div class="text-xs text-white/60">SSL-verschlüsselt · Server in der EU · DSGVO-konform</div>
       </div>
-      <!-- Abstract visual (SVG) -->
-      <div class="relative glass rounded-3xl p-0 shadow-soft">
-        <svg viewBox="0 0 600 420" class="w-full h-full rounded-3xl block">
-          <defs>
-            <linearGradient id="g1" x1="0" x2="1">
-              <stop offset="0%" stop-color="#2EF7D0" stop-opacity="0.2"/>
-              <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.2"/>
-            </linearGradient>
-            <radialGradient id="g2" cx="50%" cy="30%" r="70%">
-              <stop offset="0%" stop-color="#2EF7D0" stop-opacity="0.35"/>
-              <stop offset="100%" stop-color="#2EF7D0" stop-opacity="0"/>
-            </radialGradient>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#g2)"/>
-          <g stroke="url(#g1)" stroke-width="1">
-            <!-- grid lines -->
-            <script type="application/ecmascript"><![CDATA[
-              const s=document.currentScript.ownerSVGElement;
-              const g=s.querySelector('g');
-              for(let x=20;x<600;x+=24){ const l=document.createElementNS('http://www.w3.org/2000/svg','line'); l.setAttribute('x1',x); l.setAttribute('y1',0); l.setAttribute('x2',x); l.setAttribute('y2',420); g.appendChild(l); }
-              for(let y=20;y<420;y+=24){ const l=document.createElementNS('http://www.w3.org/2000/svg','line'); l.setAttribute('x1',0); l.setAttribute('y1',y); l.setAttribute('x2',600); l.setAttribute('y2',y); g.appendChild(l); }
-            ]]></script>
-          </g>
-          <circle cx="140" cy="120" r="6" fill="#2EF7D0"/><circle cx="300" cy="220" r="6" fill="#2EF7D0"/><circle cx="460" cy="90" r="6" fill="#2EF7D0"/>
-          <text x="155" y="125" font-size="12" fill="#F9FAFB" opacity=".8">Research</text>
-          <text x="315" y="225" font-size="12" fill="#F9FAFB" opacity=".8">Content</text>
-          <text x="475" y="95"  font-size="12" fill="#F9FAFB" opacity=".8">Service</text>
-        </svg>
+
+      <div class="glass hero-visual p-0 shadow-soft min-h-[320px] md:min-h-[380px]">
+        <div class="h-full w-full grid grid-cols-3 gap-6 p-6">
+          <div class="glass rounded-2xl p-4">
+            <div class="text-sm uppercase tracking-widest text-white/60">Research</div>
+            <div class="mt-2 text-2xl font-bold">⚙️</div>
+            <p class="text-white/70 text-sm mt-2">Konkurrenz & Trends</p>
+          </div>
+          <div class="glass rounded-2xl p-4">
+            <div class="text-sm uppercase tracking-widest text-white/60">Content</div>
+            <div class="mt-2 text-2xl font-bold">🧠</div>
+            <p class="text-white/70 text-sm mt-2">Briefings & Entwürfe</p>
+          </div>
+          <div class="glass rounded-2xl p-4">
+            <div class="text-sm uppercase tracking-widest text-white/60">Service</div>
+            <div class="mt-2 text-2xl font-bold">🤖</div>
+            <p class="text-white/70 text-sm mt-2">FAQ & Intake</p>
+          </div>
+          <div class="glass rounded-2xl p-4 col-span-3">
+            <div class="text-white/70 text-sm">SPEC88 orchestriert Agenten sicher mit Logs, Limits & Whitelist-Quellen – produktiv statt spielerisch.</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Trust logos (neutral placeholders) -->
-  <section class="py-6 border-t border-white/5">
-    <div class="container-lg grid grid-cols-2 md:grid-cols-6 gap-4 items-center opacity-70">
-      <div class="logo-skeleton"></div><div class="logo-skeleton"></div><div class="logo-skeleton"></div>
-      <div class="logo-skeleton"></div><div class="logo-skeleton"></div><div class="logo-skeleton"></div>
-    </div>
-  </section>
-
-  <!-- Produkt-Capabilities (inspir. Gateway/Catalog/ToolServer/Multi-LLM) -->
+  <!-- Features -->
   <section id="features" class="py-20 border-t border-white/5">
     <div class="container-lg">
       <h2 class="text-2xl md:text-4xl font-bold mb-10">Smarte KI-Agenten. Echte Ergebnisse.</h2>
+
       <div class="grid md:grid-cols-2 gap-6">
         <div class="glass rounded-3xl p-6">
-          <h3 class="text-xl font-semibold">Agent-Gateway (bereitgestellt von SPEC88)</h3>
-          <p class="text-white/80 mt-2">Sichere Orchestrierung deiner Agenten: Zugriff, Ratenbegrenzung, Routing und Protokollierung – produktiv, nicht spielerisch.</p>
+          <h3 class="text-xl font-semibold">Agent-Gateway (by SPEC88)</h3>
+          <p class="text-white/80 mt-2">Sichere Orchestrierung: Zugriff, Quoten, Routing, Protokolle. Stabil und kontrollierbar.</p>
         </div>
         <div class="glass rounded-3xl p-6">
           <h3 class="text-xl font-semibold">Agent-Katalog (kuratiert)</h3>
-          <p class="text-white/80 mt-2">Zugeschnittene Agenten für Research, Content & Service. Klar dokumentierte Ein- und Ausgaben. Keine Basteloberfläche, sondern fertige Bausteine.</p>
+          <p class="text-white/80 mt-2">Vorgefertigte Agenten für Research, Content & Service. Klar definierte Inputs/Outputs.</p>
         </div>
         <div class="glass rounded-3xl p-6">
           <h3 class="text-xl font-semibold">API-Tool-Layer</h3>
-          <p class="text-white/80 mt-2">Wir binden deine Systeme als „Tools“ an – ohne Backend neu zu schreiben. Sicher, versioniert, auditierbar.</p>
+          <p class="text-white/80 mt-2">Wir binden bestehende Systeme als „Tools“ an – versioniert & auditierbar, ohne dein Backend neu zu bauen.</p>
         </div>
         <div class="glass rounded-3xl p-6">
           <h3 class="text-xl font-semibold">Multi-Agent · Multi-LLM</h3>
-          <p class="text-white/80 mt-2">Agenten arbeiten zusammen, sprechen mit verschiedenen Modellen, und bleiben durch Policies kontrolliert – Kosten & Qualität im Griff.</p>
+          <p class="text-white/80 mt-2">Zusammenspiel mehrerer Agenten & Modelle – mit Policies für Kosten & Qualität.</p>
         </div>
       </div>
 
-      <!-- Originale drei Karten aus deinem Briefing, behalten -->
       <div class="grid md:grid-cols-3 gap-6 mt-10">
         <div class="glass rounded-3xl p-6">
-          <div class="text-3xl">⚙</div>
-          <h4 class="text-lg font-semibold mt-3">Market Research Agent</h4>
-          <p class="text-white/70 mt-2">Findet Trends & Konkurrenzdaten automatisch.</p>
+          <div class="text-3xl">⚙️</div>
+          <h4 class="text-lg font-semibold mt-3">Market-Research-Agent</h4>
+          <p class="text-white/70 mt-2">Sammelt Konkurrenzdaten & Trends (mit Quellen). Wöchentlicher Report als PDF.</p>
         </div>
         <div class="glass rounded-3xl p-6">
           <div class="text-3xl">🧠</div>
-          <h4 class="text-lg font-semibold mt-3">Content-Ideen Agent</h4>
-          <p class="text-white/70 mt-2">Erstellt Social-Media-Posts & Texte.</p>
+          <h4 class="text-lg font-semibold mt-3">Content-Ideen-Agent</h4>
+          <p class="text-white/70 mt-2">Erstellt Briefings & Beispieltexte, passend zur Branche.</p>
         </div>
         <div class="glass rounded-3xl p-6">
           <div class="text-3xl">🤖</div>
-          <h4 class="text-lg font-semibold mt-3">FAQ & Service Agent</h4>
-          <p class="text-white/70 mt-2">Beantwortet Kundenfragen 24/7.</p>
+          <h4 class="text-lg font-semibold mt-3">FAQ & Service-Agent</h4>
+          <p class="text-white/70 mt-2">Antwortet 24/7 auf Standardfragen. Optional: Intake-Formulare.</p>
         </div>
       </div>
 
@@ -199,18 +217,18 @@
     </div>
   </section>
 
-  <!-- Governance / Observability (Benefits inspiriert) -->
-  <section class="py-20 border-t border-white/5">
+  <!-- Security -->
+  <section id="security" class="py-20 border-t border-white/5">
     <div class="container-lg">
       <h2 class="text-2xl md:text-4xl font-bold mb-10">Sicherheit, Kontrolle & Transparenz</h2>
       <div class="grid md:grid-cols-3 gap-6">
         <div class="glass rounded-3xl p-6">
           <h3 class="text-xl font-semibold">Kontext-Guardrails</h3>
-          <p class="text-white/80 mt-2">Rollen, Policies, Quoten. Deine Daten bleiben dort, wo sie hingehören.</p>
+          <p class="text-white/80 mt-2">Rollen, Policies, Domain-Whitelist. Daten bleiben, wo sie hingehören.</p>
         </div>
         <div class="glass rounded-3xl p-6">
           <h3 class="text-xl font-semibold">Kosten-Monitoring</h3>
-          <p class="text-white/80 mt-2">Transparente Nutzung pro Agent/LLM. Anomalien werden markiert, Limits erzwungen.</p>
+          <p class="text-white/80 mt-2">Transparente Nutzung pro Agent/LLM. Limits & Anomalie-Alarme.</p>
         </div>
         <div class="glass rounded-3xl p-6">
           <h3 class="text-xl font-semibold">Ereignis-Logs</h3>
@@ -220,7 +238,7 @@
     </div>
   </section>
 
-  <!-- Process (grundsätzlich) -->
+  <!-- Process -->
   <section id="process" class="py-20 border-t border-white/5">
     <div class="container-lg">
       <h2 class="text-2xl md:text-4xl font-bold mb-10">So funktioniert es in 3 Schritten</h2>
@@ -237,4 +255,319 @@
         </div>
         <div class="glass rounded-3xl p-6">
           <div class="text-sm text-primary font-semibold">Schritt 3</div>
-          <h3
+          <h3 class="text-xl font-semibold mt-1">Go-Live & Betreuung</h3>
+          <p class="text-white/70 mt-2">Automatisierte Abläufe mit Updates, Reports & Support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tester -->
+  <section id="tester" class="py-20 border-t border-white/5">
+    <div class="container-lg">
+      <h2 class="text-2xl md:text-4xl font-bold mb-6">Pilot-Test (einmalig)</h2>
+      <div class="glass rounded-3xl p-6 md:p-8">
+        <p class="text-white/80">Schneller Einstieg: Wir setzen einen Agenten als Pilot auf, zeigen dir in einer Live-Demo Output & Logs und definieren die nächsten Schritte.</p>
+        <ul class="text-white/80 mt-4 space-y-2 list-disc list-inside">
+          <li>Preis: <strong class="text-primary">249 €</strong> zzgl. MwSt.</li>
+          <li>Remote-Umsetzung, inklusive Onboarding-Fragebogen</li>
+          <li>Quellen-Whitelist & Kostenlimit</li>
+          <li>Report (PDF) + Empfehlung</li>
+        </ul>
+        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="mt-6 btn bg-primary text-background font-semibold px-6 py-3 hover:bg-hover">Kostenlose Demo buchen</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-20 border-t border-white/5">
+    <div class="container-lg">
+      <h2 class="text-2xl md:text-4xl font-bold mb-10">Pakete & Preise</h2>
+      <div class="grid md:grid-cols-3 gap-6 items-stretch">
+        <div class="glass rounded-3xl p-6 flex flex-col">
+          <h3 class="text-xl font-semibold">Pilot</h3>
+          <p class="text-3xl font-extrabold mt-2">990 € <span class="text-white/60 text-base font-medium">Setup</span></p>
+          <p class="text-lg font-semibold">+ 490 €/Monat</p>
+          <ul class="mt-4 text-white/80 space-y-1">
+            <li>• 1 Agent (z. B. Research)</li>
+            <li>• Wöchentlicher Report (PDF) mit Quellen</li>
+            <li>• Setup in 7–10 Tagen</li>
+          </ul>
+          <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="mt-auto btn bg-primary text-background font-semibold px-5 py-3 hover:bg-hover">Angebot anfragen</button>
+        </div>
+        <div class="glass rounded-3xl p-6 border border-primary/30 shadow-soft flex flex-col">
+          <h3 class="text-xl font-semibold">Pro</h3>
+          <p class="text-3xl font-extrabold mt-2">2 990 € <span class="text-white/60 text-base font-medium">Setup</span></p>
+          <p class="text-lg font-semibold">+ 990 €/Monat</p>
+          <ul class="mt-4 text-white/80 space-y-1">
+            <li>• bis 3 Agenten</li>
+            <li>• Wöchentlich/daily Reports</li>
+            <li>• Support & Updates</li>
+          </ul>
+          <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="mt-auto btn bg-primary text-background font-semibold px-5 py-3 hover:bg-hover">Angebot anfragen</button>
+        </div>
+        <div class="glass rounded-3xl p-6 flex flex-col">
+          <h3 class="text-xl font-semibold">Enterprise</h3>
+          <p class="text-3xl font-extrabold mt-2">ab 10 000 € <span class="text-white/60 text-base font-medium">Setup</span></p>
+          <p class="text-lg font-semibold">+ 2 000–3 000 €/Monat</p>
+          <ul class="mt-4 text-white/80 space-y-1">
+            <li>• Maßgeschneiderte Systeme</li>
+            <li>• Integration (CRM/ERP/Drive)</li>
+            <li>• SLA, Audit & Compliance</li>
+          </ul>
+          <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="mt-auto btn bg-primary text-background font-semibold px-5 py-3 hover:bg-hover">Angebot anfragen</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why -->
+  <section id="why" class="py-20 border-t border-white/5">
+    <div class="container-lg">
+      <h2 class="text-2xl md:text-4xl font-bold mb-10">Warum SPEC88?</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="glass rounded-3xl p-6">
+          <div class="text-3xl">⚡</div>
+          <h3 class="text-xl font-semibold mt-2">Schnelle Umsetzung</h3>
+          <p class="text-white/70 mt-2">Live in 14 Tagen.</p>
+        </div>
+        <div class="glass rounded-3xl p-6">
+          <div class="text-3xl">💡</div>
+          <h3 class="text-xl font-semibold mt-2">Individuell</h3>
+          <p class="text-white/70 mt-2">Agenten auf dein Business trainiert.</p>
+        </div>
+        <div class="glass rounded-3xl p-6">
+          <div class="text-3xl">🔒</div>
+          <h3 class="text-xl font-semibold mt-2">Datensicher</h3>
+          <p class="text-white/70 mt-2">DSGVO-konform, EU-Server, AV-Vertrag möglich.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 border-t border-white/5">
+    <div class="container-lg max-w-3xl">
+      <h2 class="text-2xl md:text-4xl font-bold mb-6">Lass uns deinen KI-Agenten planen</h2>
+      <form id="demoForm" class="glass rounded-3xl p-6 space-y-4" onsubmit="handleSubmit(event)">
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label for="name" class="block text-sm text-white/80 mb-1">Name*</label>
+            <input id="name" name="name" required class="w-full px-4 py-3 rounded-2xl bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary" />
+          </div>
+          <div>
+            <label for="company" class="block text-sm text-white/80 mb-1">Unternehmen</label>
+            <input id="company" name="company" class="w-full px-4 py-3 rounded-2xl bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary" />
+          </div>
+        </div>
+        <div>
+          <label for="email" class="block text-sm text-white/80 mb-1">E-Mail*</label>
+          <input id="email" type="email" name="email" required class="w-full px-4 py-3 rounded-2xl bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary" />
+        </div>
+        <div>
+          <label for="message" class="block text-sm text-white/80 mb-1">Nachricht</label>
+          <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-2xl bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+        </div>
+
+        <!-- Honeypot (Spam-Schutz) -->
+        <div style="position:absolute; left:-9999px;" aria-hidden="true">
+          <label>Website (leer lassen)</label>
+          <input id="website" name="website" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <div class="flex items-start gap-3">
+          <input id="consent" type="checkbox" class="mt-1" required />
+          <label for="consent" class="text-sm text-white/80">Ich willige ein, dass meine Angaben zur Kontaktaufnahme und Projektabwicklung gespeichert und verarbeitet werden (Art. 6 Abs. 1 lit. b DSGVO). Weitere Informationen in der <a href="#datenschutz" onclick="openDatenschutz(event)" class="text-primary underline">Datenschutzerklärung</a>.</label>
+        </div>
+        <button type="submit" class="btn bg-primary text-background font-semibold px-6 py-3 hover:bg-hover">Jetzt kostenloses Gespräch vereinbaren</button>
+        <p class="text-xs text-white/60 mt-2">Oder ruf direkt an: <a class="text-primary underline" href="tel:+491638621972">+49 163 8621972</a></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 py-12">
+    <div class="container-lg grid md:grid-cols-2 gap-6 text-sm">
+      <div>
+        <div class="font-semibold">Impressum</div>
+        <div class="mt-2 text-white/80">
+          SPEC88 – David Yurko<br/>
+          Tulpenstraße 4, 63128 Dietzenbach, Deutschland<br/>
+          Telefon: <a href="tel:+491638621972" class="text-primary">+49 163 8621972</a><br/>
+          E-Mail: <a href="mailto:hello@spec88.com" class="text-primary">hello@spec88.com</a><br/>
+          Verantwortlich gemäß § 5 TMG: David Yurko
+        </div>
+      </div>
+      <div>
+        <div class="font-semibold">Datenschutz</div>
+        <p class="mt-2 text-white/80">Wir verarbeiten personenbezogene Daten ausschließlich zum Zweck der Kontaktaufnahme und Projektabwicklung. Server-Hosting innerhalb der EU. Keine Weitergabe an Dritte außer gesetzlicher Pflicht. Du kannst jederzeit Auskunft oder Löschung beantragen.</p>
+        <div class="mt-3 flex gap-4">
+          <a href="#impressum" onclick="openImpressum(event)" class="text-primary underline">Impressum</a>
+          <a href="#datenschutz" onclick="openDatenschutz(event)" class="text-primary underline">Datenschutzerklärung</a>
+          <a href="#cookies" onclick="openCookieBanner(event)" class="text-primary underline">Cookie-Einstellungen</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-lg mt-8 text-white/60 text-xs">© 2025 SPEC88 – Alle Rechte vorbehalten.</div>
+  </footer>
+
+  <!-- Modals: Impressum & Datenschutz -->
+  <dialog id="impressumModal" role="dialog" aria-modal="true" aria-labelledby="impressumTitle"
+          class="w-[min(900px,92vw)] rounded-2xl p-0 bg-background border border-white/10">
+    <div class="p-6 space-y-3">
+      <div class="flex items-center justify-between">
+        <h3 id="impressumTitle" class="text-xl font-semibold">Impressum</h3>
+        <button onclick="closeModal('impressumModal')" aria-label="Schließen"
+                class="px-3 py-1 rounded-lg border border-white/10 hover:border-primary/50">Schließen</button>
+      </div>
+      <div class="text-white/80 text-sm">
+        SPEC88 – David Yurko<br/>
+        Tulpenstraße 4, 63128 Dietzenbach, Deutschland<br/>
+        Telefon: +49 163 8621972<br/>
+        E-Mail: hello@spec88.com<br/>
+        Verantwortlich gemäß § 5 TMG: David Yurko
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="datenschutzModal" role="dialog" aria-modal="true" aria-labelledby="datenschutzTitle"
+          class="w-[min(900px,92vw)] rounded-2xl p-0 bg-background border border-white/10">
+    <div class="p-6 space-y-3">
+      <div class="flex items-center justify-between">
+        <h3 id="datenschutzTitle" class="text-xl font-semibold">Datenschutzerklärung</h3>
+        <button onclick="closeModal('datenschutzModal')" aria-label="Schließen"
+                class="px-3 py-1 rounded-lg border border-white/10 hover:border-primary/50">Schließen</button>
+      </div>
+      <div class="text-white/80 text-sm space-y-3">
+        <p><strong>Verantwortlicher:</strong><br>SPEC88 – David Yurko, Tulpenstraße 4, 63128 Dietzenbach, Deutschland – E-Mail: <a class="text-primary" href="mailto:hello@spec88.com">hello@spec88.com</a>, Tel: +49 163 8621972.</p>
+        <p><strong>Zwecke & Rechtsgrundlagen:</strong> Bearbeitung von Anfragen/Projekten (Art. 6 Abs. 1 lit. b DSGVO), technischer Betrieb/IT-Sicherheit (Art. 6 Abs. 1 lit. f DSGVO). Statistik/Marketing nur nach Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).</p>
+        <p><strong>Empfänger & Auftragsverarbeiter:</strong> Hosting & Infrastruktur innerhalb der EU. Eine Übermittlung an Dritte erfolgt nur, soweit für den Betrieb erforderlich (z. B. Formular-Dienst) und mit AV-Vertrag.</p>
+        <p><strong>Speicherdauer:</strong> Kontaktdaten bis Abschluss der Anfrage bzw. gesetzlicher Aufbewahrung; Protokolldaten werden regelmäßig gelöscht.</p>
+        <p><strong>Cookies & Einwilligung:</strong> Essentielle Cookies sind erforderlich. Statistik/Marketing-Cookies werden erst nach Opt-in gesetzt (Consent-Banner). Widerruf jederzeit möglich.</p>
+        <p><strong>Betroffenenrechte:</strong> Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf von Einwilligungen, Beschwerde bei einer Aufsichtsbehörde.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Cookie Banner -->
+  <dialog id="cookieBanner" role="dialog" aria-modal="true" aria-labelledby="cookieTitle"
+          class="w-[min(900px,92vw)] rounded-2xl p-0 bg-background border border-white/10">
+    <form method="dialog" class="p-6">
+      <h3 id="cookieTitle" class="text-xl font-semibold">Cookie-Einstellungen</h3>
+      <p class="text-white/80 text-sm mt-2">Wir verwenden Cookies für den zuverlässigen Betrieb dieser Website. Statistik/Marketing werden nur nach deiner Einwilligung gesetzt.</p>
+      <div class="grid md:grid-cols-3 gap-4 mt-4">
+        <div class="glass rounded-2xl p-4">
+          <div class="font-semibold">Essentiell</div>
+          <p class="text-white/70 text-sm">Erforderlich für Grundfunktionen. Immer aktiv.</p>
+          <label class="mt-2 inline-flex items-center gap-2 text-white/60 text-sm"><input type="checkbox" checked disabled /> Aktiv</label>
+        </div>
+        <div class="glass rounded-2xl p-4">
+          <div class="font-semibold">Statistik</div>
+          <p class="text-white/70 text-sm">Anonyme Nutzungsstatistiken.</p>
+          <label class="mt-2 inline-flex items-center gap-2 text-white/60 text-sm"><input id="consentStats" type="checkbox" /> Zustimmen</label>
+        </div>
+        <div class="glass rounded-2xl p-4">
+          <div class="font-semibold">Marketing</div>
+          <p class="text-white/70 text-sm">Marketing-/Remarketing-Funktionen.</p>
+          <label class="mt-2 inline-flex items-center gap-2 text-white/60 text-sm"><input id="consentMkt" type="checkbox" /> Zustimmen</label>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-3 justify-end mt-6">
+        <button value="reject" class="px-5 py-2 rounded-full border border-white/10 hover:border-primary/50">Nur Essentiell</button>
+        <button value="accept" class="btn bg-primary text-background font-semibold px-5 py-2 hover:bg-hover">Alle akzeptieren</button>
+        <button value="save" class="px-5 py-2 rounded-full border border-white/10 hover:border-primary/50">Auswahl speichern</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Scripts -->
+  <script>
+    // Modal helpers
+    function openImpressum(e){ e?.preventDefault(); const d=document.getElementById('impressumModal'); d.showModal(); d.querySelector('button[aria-label="Schließen"]')?.focus(); }
+    function openDatenschutz(e){ e?.preventDefault(); const d=document.getElementById('datenschutzModal'); d.showModal(); d.querySelector('button[aria-label="Schließen"]')?.focus(); }
+    function closeModal(id){ document.getElementById(id).close(); }
+    function openCookieBanner(e){ e?.preventDefault(); document.getElementById('cookieBanner').showModal(); }
+  </script>
+
+  <!-- Consent + optional Analytics -->
+  <script>
+    const KEY = 'spec88_consent_v1';
+    const banner = document.getElementById('cookieBanner');
+    const stats = document.getElementById('consentStats');
+    const mkt = document.getElementById('consentMkt');
+
+    function getConsent(){ try { return JSON.parse(localStorage.getItem(KEY) || '{}'); } catch { return {}; } }
+    function setConsent(c){ localStorage.setItem(KEY, JSON.stringify(c)); }
+    function loadScript(src, attrs={}){ return new Promise((res,rej)=>{ const s=document.createElement('script'); s.src=src; s.async=true; Object.entries(attrs).forEach(([k,v])=>s.setAttribute(k,v)); s.onload=res; s.onerror=rej; document.head.appendChild(s); }); }
+
+    async function initializeAnalytics(){
+      // GA4 anonymisiert – nur laden, wenn Statistik erlaubt:
+      // Ersetze die ID oder entferne komplett, wenn nicht genutzt.
+      const GA_ID = 'G-XXXXXXX';
+      if (GA_ID === 'G-XXXXXXX') return; // nicht aktiv ohne echte ID
+      await loadScript('https://www.googletagmanager.com/gtag/js?id='+GA_ID);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', GA_ID, { 'anonymize_ip': true, 'allow_google_signals': false });
+      console.log('[Consent] Statistik aktiviert');
+    }
+    function initializeMarketing(){ console.log('[Consent] Marketing aktiviert'); }
+
+    function applyConsent(c){
+      if (!c || !c.set) return;
+      if (c.statistics) initializeAnalytics();
+      if (c.marketing) initializeMarketing();
+    }
+    function initConsent(){
+      const c = getConsent();
+      if (!('set' in c)) { banner?.showModal(); }
+      if (stats) stats.checked = !!c.statistics;
+      if (mkt) mkt.checked = !!c.marketing;
+      applyConsent(c);
+    }
+    banner?.addEventListener('submit', (e) => {
+      const val = e.submitter?.value; let c = {};
+      if (val === 'accept') c = { set:true, necessary:true, statistics:true, marketing:true };
+      else if (val === 'reject') c = { set:true, necessary:true, statistics:false, marketing:false };
+      else if (val === 'save') c = { set:true, necessary:true, statistics:!!stats?.checked, marketing:!!mkt?.checked };
+      setConsent(c); applyConsent(c);
+    });
+    document.addEventListener('DOMContentLoaded', initConsent);
+  </script>
+
+  <!-- Form submit via Formspree -->
+  <script>
+    async function handleSubmit(e){
+      e.preventDefault();
+      const form = e.target;
+      const consentGiven = document.getElementById('consent')?.checked;
+      if (!consentGiven) { alert('Bitte stimme der Datenverarbeitung zu.'); return; }
+      if (form.querySelector('#website')?.value) { return; } // honeypot
+
+      const payload = {
+        name: form.name.value.trim(),
+        company: form.company.value.trim(),
+        email: form.email.value.trim(),
+        message: form.message.value.trim(),
+        ts: new Date().toISOString()
+      };
+
+      try {
+        const r = await fetch('FORMSPREE_ENDPOINT_ID', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (!r.ok) throw new Error('Netzwerkfehler');
+        form.reset();
+        alert('Danke! Wir melden uns in Kürze für eine kostenlose Demo.');
+      } catch (err) {
+        console.error(err);
+        alert('Senden fehlgeschlagen. Bitte schreib direkt an hello@spec88.com.');
+      }
+    }
+  </script>
+
+</body>
+</html>
