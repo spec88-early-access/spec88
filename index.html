@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>SPEC88 – Intelligente KI-Agenten für Unternehmen | Automatisierung in 14 Tagen</title>
-  <meta name="description" content="SPEC88 entwickelt maßgeschneiderte KI-Agenten, die Recherche, Kommunikation und Prozesse automatisieren. In 14 Tagen live – DSGVO-konform und sicher in der EU." />
+  <meta name="description" content="SPEC88 baut maßgeschneiderte KI-Agenten, die Recherche, Kommunikation und Prozesse automatisieren. In 7–14 Tagen live – DSGVO-konform und EU-gehostet." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://www.spec88.com/" />
 
@@ -34,31 +34,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preload" as="image" href="/og-spec88.jpg">
 
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "SPEC88",
-    "url": "https://www.spec88.com/",
-    "logo": "https://www.spec88.com/apple-touch-icon.png",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Tulpenstraße 4",
-      "postalCode": "63128",
-      "addressLocality": "Dietzenbach",
-      "addressCountry": "DE"
-    },
-    "contactPoint": [{
-      "@type": "ContactPoint",
-      "contactType": "sales",
-      "email": "hello@spec88.com",
-      "telephone": "+49 163 8621972",
-      "areaServed": "DE"
-    }]
-  }
-  </script>
-
   <!-- Fonts + Tailwind -->
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -80,6 +55,10 @@
     }
   </script>
 
+  <!-- Calendly embed -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
   <style>
     html { scroll-behavior: smooth; }
     body {
@@ -94,13 +73,8 @@
     .btn { border-radius:9999px; box-shadow:0 6px 18px rgba(46,247,208,0.25); transition: transform .15s ease, box-shadow .2s ease; }
     .btn:hover { transform: translateY(-1px); box-shadow:0 10px 28px rgba(59,130,246,0.25); }
     .badge { display:inline-block; border:1px solid rgba(255,255,255,0.12); padding:.35rem .6rem; border-radius:9999px; font-size:.8rem; }
-    .hero-visual { position:relative; overflow:hidden; border-radius:1.5rem; }
-    .hero-visual::before {
-      content:""; position:absolute; inset:0;
-      background: radial-gradient(60% 60% at 30% 30%, rgba(46,247,208,.18), transparent 60%),
-                  radial-gradient(60% 60% at 70% 40%, rgba(59,130,246,.18), transparent 60%),
-                  linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-    }
+    input, textarea { color:#F9FAFB; }
+    ::placeholder { color: rgba(249,250,251,.6); }
   </style>
 </head>
 <body class="font-sans antialiased">
@@ -119,11 +93,11 @@
         <a href="#security" class="opacity-80 hover:opacity-100">Sicherheit</a>
         <a href="#process" class="opacity-80 hover:opacity-100">Ablauf</a>
         <a href="#tester" class="opacity-80 hover:opacity-100">Tester</a>
-        <a href="#pricing" class="opacity-80 hover:opacity-100">Preise</a>
+        <a href="#book" class="opacity-80 hover:opacity-100">Termin buchen</a>
         <a href="#contact" class="opacity-80 hover:opacity-100">Kontakt</a>
       </nav>
       <div class="flex items-center gap-3">
-        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="btn bg-primary text-background font-semibold px-5 py-2 hover:bg-hover">Tester buchen</button>
+        <button onclick="document.getElementById('book').scrollIntoView({behavior:'smooth'})" class="btn bg-primary text-background font-semibold px-5 py-2 hover:bg-hover">Termin buchen</button>
       </div>
     </div>
   </header>
@@ -133,21 +107,21 @@
     <div class="container-lg grid md:grid-cols-2 gap-10 items-center py-16 md:py-24">
       <div class="space-y-6">
         <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">
-          Starte dein Business mit <span class="text-primary">intelligenten KI-Agenten</span>
+          Intelligente <span class="text-primary">KI-Agenten</span> – in 14 Tagen live
         </h1>
-        <p class="text-lg md:text-xl text-white/80">Automatisiere Recherche, Kommunikation und Reporting – <strong>in 14 Tagen live</strong>, maßgeschneidert für dein Unternehmen.</p>
+        <p class="text-lg md:text-xl text-white/80">Automatisiere Recherche, Kommunikation und Reporting – maßgeschneidert, DSGVO-konform und EU-gehostet.</p>
         <div class="flex items-center gap-3">
-          <span class="badge text-white/80">Tester (einmalig): <strong class="text-primary">249 €</strong> (zzgl. MwSt.) – remote, deckt Einrichtung & Test.</span>
+          <span class="badge text-white/80">Tester (einmalig): <strong class="text-primary">249 €</strong> (zzgl. MwSt.) – schneller Einstieg ohne Abo.</span>
         </div>
         <div class="flex flex-col sm:flex-row gap-4">
-          <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="btn bg-primary text-background font-semibold px-6 py-3 hover:bg-hover">Tester buchen</button>
-          <a href="#features" class="px-6 py-3 rounded-full border border-white/10 hover:border-primary/50">Mehr erfahren</a>
+          <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/davidyurko28/gesprach'}); return false;" class="btn bg-primary text-background font-semibold px-6 py-3 hover:bg-hover">Sofort Termin wählen</button>
+          <a href="#book" class="px-6 py-3 rounded-full border border-white/10 hover:border-primary/50">Kalender anzeigen</a>
         </div>
         <div class="text-xs text-white/60">SSL-verschlüsselt · Server in der EU · DSGVO-konform</div>
       </div>
 
-      <div class="glass hero-visual p-0 shadow-soft min-h-[320px] md:min-h-[380px]">
-        <div class="h-full w-full grid grid-cols-3 gap-6 p-6">
+      <div class="glass p-6 shadow-soft min-h-[320px] md:min-h-[380px] rounded-3xl">
+        <div class="grid grid-cols-3 gap-6">
           <div class="glass rounded-2xl p-4">
             <div class="text-sm uppercase tracking-widest text-white/60">Research</div>
             <div class="mt-2 text-2xl font-bold">⚙️</div>
@@ -175,45 +149,17 @@
   <section id="features" class="py-20 border-t border-white/5">
     <div class="container-lg">
       <h2 class="text-2xl md:text-4xl font-bold mb-10">Smarte KI-Agenten. Echte Ergebnisse.</h2>
-
       <div class="grid md:grid-cols-2 gap-6">
-        <div class="glass rounded-3xl p-6">
-          <h3 class="text-xl font-semibold">Agent-Gateway (by SPEC88)</h3>
-          <p class="text-white/80 mt-2">Sichere Orchestrierung: Zugriff, Quoten, Routing, Protokolle. Stabil und kontrollierbar.</p>
-        </div>
-        <div class="glass rounded-3xl p-6">
-          <h3 class="text-xl font-semibold">Agent-Katalog (kuratiert)</h3>
-          <p class="text-white/80 mt-2">Vorgefertigte Agenten für Research, Content & Service. Klar definierte Inputs/Outputs.</p>
-        </div>
-        <div class="glass rounded-3xl p-6">
-          <h3 class="text-xl font-semibold">API-Tool-Layer</h3>
-          <p class="text-white/80 mt-2">Wir binden bestehende Systeme als „Tools“ an – versioniert & auditierbar, ohne dein Backend neu zu bauen.</p>
-        </div>
-        <div class="glass rounded-3xl p-6">
-          <h3 class="text-xl font-semibold">Multi-Agent · Multi-LLM</h3>
-          <p class="text-white/80 mt-2">Zusammenspiel mehrerer Agenten & Modelle – mit Policies für Kosten & Qualität.</p>
-        </div>
+        <div class="glass rounded-3xl p-6"><h3 class="text-xl font-semibold">Agent-Gateway (by SPEC88)</h3><p class="text-white/80 mt-2">Sichere Orchestrierung: Zugriff, Quoten, Routing, Protokolle. Stabil und kontrollierbar.</p></div>
+        <div class="glass rounded-3xl p-6"><h3 class="text-xl font-semibold">Agent-Katalog (kuratiert)</h3><p class="text-white/80 mt-2">Vorgefertigte Agenten für Research, Content & Service. Klar definierte Inputs/Outputs.</p></div>
+        <div class="glass rounded-3xl p-6"><h3 class="text-xl font-semibold">API-Tool-Layer</h3><p class="text-white/80 mt-2">Bestehende Systeme werden als „Tools“ angebunden – versioniert & auditierbar.</p></div>
+        <div class="glass rounded-3xl p-6"><h3 class="text-xl font-semibold">Multi-Agent · Multi-LLM</h3><p class="text-white/80 mt-2">Zusammenspiel mehrerer Agenten & Modelle – Policies für Kosten & Qualität.</p></div>
       </div>
-
       <div class="grid md:grid-cols-3 gap-6 mt-10">
-        <div class="glass rounded-3xl p-6">
-          <div class="text-3xl">⚙️</div>
-          <h4 class="text-lg font-semibold mt-3">Market-Research-Agent</h4>
-          <p class="text-white/70 mt-2">Sammelt Konkurrenzdaten & Trends (mit Quellen). Wöchentlicher Report als PDF.</p>
-        </div>
-        <div class="glass rounded-3xl p-6">
-          <div class="text-3xl">🧠</div>
-          <h4 class="text-lg font-semibold mt-3">Content-Ideen-Agent</h4>
-          <p class="text-white/70 mt-2">Erstellt Briefings & Beispieltexte, passend zur Branche.</p>
-        </div>
-        <div class="glass rounded-3xl p-6">
-          <div class="text-3xl">🤖</div>
-          <h4 class="text-lg font-semibold mt-3">FAQ & Service-Agent</h4>
-          <p class="text-white/70 mt-2">Antwortet 24/7 auf Standardfragen. Optional: Intake-Formulare.</p>
-        </div>
+        <div class="glass rounded-3xl p-6"><div class="text-3xl">⚙️</div><h4 class="text-lg font-semibold mt-3">Market-Research-Agent</h4><p class="text-white/70 mt-2">Sammelt Konkurrenzdaten & Trends (mit Quellen). Wöchentlicher Report als PDF.</p></div>
+        <div class="glass rounded-3xl p-6"><div class="text-3xl">🧠</div><h4 class="text-lg font-semibold mt-3">Content-Ideen-Agent</h4><p class="text-white/70 mt-2">Erstellt Briefings & Beispieltexte, passend zur Branche.</p></div>
+        <div class="glass rounded-3xl p-6"><div class="text-3xl">🤖</div><h4 class="text-lg font-semibold mt-3">FAQ & Service-Agent</h4><p class="text-white/70 mt-2">Antwortet 24/7 auf Standardfragen. Optional: Intake-Formulare.</p></div>
       </div>
-
-      <p class="text-white/70 mt-6 max-w-3xl">Unsere Agenten kombinieren Datenanalyse, KI-Automatisierung und moderne API-Integrationen, um Unternehmen Zeit, Kosten und Personal zu sparen.</p>
     </div>
   </section>
 
@@ -222,18 +168,9 @@
     <div class="container-lg">
       <h2 class="text-2xl md:text-4xl font-bold mb-10">Sicherheit, Kontrolle & Transparenz</h2>
       <div class="grid md:grid-cols-3 gap-6">
-        <div class="glass rounded-3xl p-6">
-          <h3 class="text-xl font-semibold">Kontext-Guardrails</h3>
-          <p class="text-white/80 mt-2">Rollen, Policies, Domain-Whitelist. Daten bleiben, wo sie hingehören.</p>
-        </div>
-        <div class="glass rounded-3xl p-6">
-          <h3 class="text-xl font-semibold">Kosten-Monitoring</h3>
-          <p class="text-white/80 mt-2">Transparente Nutzung pro Agent/LLM. Limits & Anomalie-Alarme.</p>
-        </div>
-        <div class="glass rounded-3xl p-6">
-          <h3 class="text-xl font-semibold">Ereignis-Logs</h3>
-          <p class="text-white/80 mt-2">Revisionssicheres Logging für Audits & QS. DSGVO-konform, EU-Server.</p>
-        </div>
+        <div class="glass rounded-3xl p-6"><h3 class="text-xl font-semibold">Kontext-Guardrails</h3><p class="text-white/80 mt-2">Rollen, Policies, Domain-Whitelist. Daten bleiben, wo sie hingehören.</p></div>
+        <div class="glass rounded-3xl p-6"><h3 class="text-xl font-semibold">Kosten-Monitoring</h3><p class="text-white/80 mt-2">Transparente Nutzung pro Agent/LLM. Limits & Anomalie-Alarme.</p></div>
+        <div class="glass rounded-3xl p-6"><h3 class="text-xl font-semibold">Ereignis-Logs</h3><p class="text-white/80 mt-2">Revisionssicheres Logging für Audits & QS. DSGVO-konform, EU-Server.</p></div>
       </div>
     </div>
   </section>
@@ -243,21 +180,9 @@
     <div class="container-lg">
       <h2 class="text-2xl md:text-4xl font-bold mb-10">So funktioniert es in 3 Schritten</h2>
       <div class="grid md:grid-cols-3 gap-6">
-        <div class="glass rounded-3xl p-6">
-          <div class="text-sm text-primary font-semibold">Schritt 1</div>
-          <h3 class="text-xl font-semibold mt-1">Beratung & Analyse</h3>
-          <p class="text-white/70 mt-2">Wir identifizieren Aufgaben, die sich automatisieren lassen.</p>
-        </div>
-        <div class="glass rounded-3xl p-6">
-          <div class="text-sm text-primary font-semibold">Schritt 2</div>
-          <h3 class="text-xl font-semibold mt-1">Agent-Setup</h3>
-          <p class="text-white/70 mt-2">Dein KI-Agent wird in 7–14 Tagen erstellt.</p>
-        </div>
-        <div class="glass rounded-3xl p-6">
-          <div class="text-sm text-primary font-semibold">Schritt 3</div>
-          <h3 class="text-xl font-semibold mt-1">Go-Live & Betreuung</h3>
-          <p class="text-white/70 mt-2">Automatisierte Abläufe mit Updates, Reports & Support.</p>
-        </div>
+        <div class="glass rounded-3xl p-6"><div class="text-sm text-primary font-semibold">Schritt 1</div><h3 class="text-xl font-semibold mt-1">Beratung & Analyse</h3><p class="text-white/70 mt-2">Wir identifizieren Aufgaben, die sich automatisieren lassen.</p></div>
+        <div class="glass rounded-3xl p-6"><div class="text-sm text-primary font-semibold">Schritt 2</div><h3 class="text-xl font-semibold mt-1">Agent-Setup</h3><p class="text-white/70 mt-2">Dein KI-Agent wird in 7–14 Tagen erstellt.</p></div>
+        <div class="glass rounded-3xl p-6"><div class="text-sm text-primary font-semibold">Schritt 3</div><h3 class="text-xl font-semibold mt-1">Go-Live & Betreuung</h3><p class="text-white/70 mt-2">Automatisierte Abläufe mit Updates, Reports & Support.</p></div>
       </div>
     </div>
   </section>
@@ -267,109 +192,60 @@
     <div class="container-lg">
       <h2 class="text-2xl md:text-4xl font-bold mb-6">Tester (einmalig)</h2>
       <div class="glass rounded-3xl p-6 md:p-8">
-        <p class="text-white/80">Schneller Einstieg: Wir setzen einen Agenten als Tester auf, zeigen dir den Output & Logs und definieren die nächsten Schritte.</p>
+        <p class="text-white/80">Schneller Einstieg: Wir setzen einen Agenten als Tester auf, zeigen Output & Logs und definieren die nächsten Schritte. Keine Abo-Pflicht.</p>
         <ul class="text-white/80 mt-4 space-y-2 list-disc list-inside">
           <li>Preis: <strong class="text-primary">249 €</strong> zzgl. MwSt.</li>
-          <li>Remote-Umsetzung, inklusive Onboarding-Fragebogen</li>
+          <li>Remote-Umsetzung, inkl. Onboarding-Fragebogen</li>
           <li>Quellen-Whitelist & Kostenlimit</li>
           <li>Report (PDF) + Empfehlung</li>
         </ul>
-        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="mt-6 btn bg-primary text-background font-semibold px-6 py-3 hover:bg-hover">Tester buchen</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing -->
-  <section id="pricing" class="py-20 border-t border-white/5">
-    <div class="container-lg">
-      <h2 class="text-2xl md:text-4xl font-bold mb-10">Pakete & Preise</h2>
-      <div class="grid md:grid-cols-3 gap-6 items-stretch">
-        <div class="glass rounded-3xl p-6 flex flex-col">
-          <h3 class="text-xl font-semibold">Pilot</h3>
-          <p class="text-3xl font-extrabold mt-2">990 € <span class="text-white/60 text-base font-medium">Setup</span></p>
-          <p class="text-lg font-semibold">+ 490 €/Monat</p>
-          <ul class="mt-4 text-white/80 space-y-1">
-            <li>• 1 Agent (z. B. Research)</li>
-            <li>• Wöchentlicher Report (PDF) mit Quellen</li>
-            <li>• Setup in 7–10 Tagen</li>
-          </ul>
-          <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="mt-auto btn bg-primary text-background font-semibold px-5 py-3 hover:bg-hover">Angebot anfragen</button>
-        </div>
-        <div class="glass rounded-3xl p-6 border border-primary/30 shadow-soft flex flex-col">
-          <h3 class="text-xl font-semibold">Pro</h3>
-          <p class="text-3xl font-extrabold mt-2">2 990 € <span class="text-white/60 text-base font-medium">Setup</span></p>
-          <p class="text-lg font-semibold">+ 990 €/Monat</p>
-          <ul class="mt-4 text-white/80 space-y-1">
-            <li>• bis 3 Agenten</li>
-            <li>• Wöchentlich/daily Reports</li>
-            <li>• Support & Updates</li>
-          </ul>
-          <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="mt-auto btn bg-primary text-background font-semibold px-5 py-3 hover:bg-hover">Angebot anfragen</button>
-        </div>
-        <div class="glass rounded-3xl p-6 flex flex-col">
-          <h3 class="text-xl font-semibold">Enterprise</h3>
-          <p class="text-3xl font-extrabold mt-2">ab 10 000 € <span class="text-white/60 text-base font-medium">Setup</span></p>
-          <p class="text-lg font-semibold">+ 2 000–3 000 €/Monat</p>
-          <ul class="mt-4 text-white/80 space-y-1">
-            <li>• Maßgeschneiderte Systeme</li>
-            <li>• Integration (CRM/ERP/Drive)</li>
-            <li>• SLA, Audit & Compliance</li>
-          </ul>
-          <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="mt-auto btn bg-primary text-background font-semibold px-5 py-3 hover:bg-hover">Angebot anfragen</button>
+        <div class="flex gap-3 mt-6">
+          <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/davidyurko28/gesprach'}); return false;" class="btn bg-primary text-background font-semibold px-6 py-3 hover:bg-hover">Tester-Termin buchen</button>
+          <a href="#book" class="px-6 py-3 rounded-full border border-white/10 hover:border-primary/50">Kalender anzeigen</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Why -->
-  <section id="why" class="py-20 border-t border-white/5">
-    <div class="container-lg">
-      <h2 class="text-2xl md:text-4xl font-bold mb-10">Warum SPEC88?</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="glass rounded-3xl p-6">
-          <div class="text-3xl">⚡</div>
-          <h3 class="text-xl font-semibold mt-2">Schnelle Umsetzung</h3>
-          <p class="text-white/70 mt-2">Live in 14 Tagen.</p>
-        </div>
-        <div class="glass rounded-3xl p-6">
-          <div class="text-3xl">💡</div>
-          <h3 class="text-xl font-semibold mt-2">Individuell</h3>
-          <p class="text-white/70 mt-2">Agenten auf dein Business trainiert.</p>
-        </div>
-        <div class="glass rounded-3xl p-6">
-          <div class="text-3xl">🔒</div>
-          <h3 class="text-xl font-semibold mt-2">Datensicher</h3>
-          <p class="text-white/70 mt-2">DSGVO-konform, EU-Server, AV-Vertrag möglich.</p>
-        </div>
+  <!-- BOOKING: Calendly -->
+  <section id="book" class="py-20 border-t border-white/5">
+    <div class="container-lg max-w-4xl">
+      <h2 class="text-2xl md:text-4xl font-bold mb-6">Termin vereinbaren</h2>
+      <p class="text-white/80 mb-6">Buche hier direkt dein Erstgespräch (30 Minuten). Wir klären Ziele, zeigen passende Automatisierungen und besprechen die nächsten Schritte.</p>
+      <div class="glass rounded-3xl p-2">
+        <div class="calendly-inline-widget"
+             data-url="https://calendly.com/davidyurko28/gesprach"
+             style="min-width:320px;height:760px;"></div>
       </div>
+      <p class="text-white/60 text-sm mt-4">Hinweis: Das Calendly-Widget lädt Inhalte von calendly.com. Mit Klick können Cookies gesetzt werden (siehe Cookie-Einstellungen).</p>
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- CONTACT: Formspree -->
   <section id="contact" class="py-20 border-t border-white/5">
     <div class="container-lg max-w-3xl">
-      <h2 class="text-2xl md:text-4xl font-bold mb-6">Lass uns deinen KI-Agenten planen</h2>
-      <form id="demoForm" class="glass rounded-3xl p-6 space-y-4" onsubmit="handleSubmit(event)">
+      <h2 class="text-2xl md:text-4xl font-bold mb-6">Kontakt (Nachricht senden)</h2>
+      <form id="contactForm" class="glass rounded-3xl p-6 space-y-4">
         <div class="grid md:grid-cols-2 gap-4">
           <div>
             <label for="name" class="block text-sm text-white/80 mb-1">Name*</label>
-            <input id="name" name="name" required class="w-full px-4 py-3 rounded-2xl bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary" />
+            <input id="name" name="name" required placeholder="Ihr Name" class="w-full px-4 py-3 rounded-2xl bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary" />
           </div>
           <div>
             <label for="company" class="block text-sm text-white/80 mb-1">Unternehmen</label>
-            <input id="company" name="company" class="w-full px-4 py-3 rounded-2xl bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary" />
+            <input id="company" name="company" placeholder="Praxis / Studio / Firma" class="w-full px-4 py-3 rounded-2xl bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary" />
           </div>
         </div>
         <div>
           <label for="email" class="block text-sm text-white/80 mb-1">E-Mail*</label>
-          <input id="email" type="email" name="email" required class="w-full px-4 py-3 rounded-2xl bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary" />
+          <input id="email" type="email" name="email" required placeholder="name@domain.de" class="w-full px-4 py-3 rounded-2xl bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary" />
         </div>
         <div>
           <label for="message" class="block text-sm text-white/80 mb-1">Nachricht</label>
-          <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-2xl bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+          <textarea id="message" name="message" rows="4" placeholder="Wobei sollen wir helfen?" class="w-full px-4 py-3 rounded-2xl bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
         </div>
 
-        <!-- Honeypot (Spam-Schutz) -->
+        <!-- Honeypot -->
         <div style="position:absolute; left:-9999px;" aria-hidden="true">
           <label>Website (leer lassen)</label>
           <input id="website" name="website" tabindex="-1" autocomplete="off" />
@@ -379,8 +255,13 @@
           <input id="consent" type="checkbox" class="mt-1" required />
           <label for="consent" class="text-sm text-white/80">Ich willige ein, dass meine Angaben zur Kontaktaufnahme und Projektabwicklung gespeichert und verarbeitet werden (Art. 6 Abs. 1 lit. b DSGVO). Weitere Informationen in der <a href="#datenschutz" onclick="openDatenschutz(event)" class="text-primary underline">Datenschutzerklärung</a>.</label>
         </div>
-        <button type="submit" class="btn bg-primary text-background font-semibold px-6 py-3 hover:bg-hover">Jetzt kostenloses Gespräch vereinbaren</button>
-        <p class="text-xs text-white/60 mt-2">Oder ruf direkt an: <a class="text-primary underline" href="tel:+491638621972">+49 163 8621972</a></p>
+
+        <div class="flex flex-col sm:flex-row gap-3">
+          <button type="submit" class="btn bg-primary text-background font-semibold px-6 py-3 hover:bg-hover">Nachricht senden</button>
+          <button type="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/davidyurko28/gesprach'}); return false;" class="px-6 py-3 rounded-full border border-white/10 hover:border-primary/50">Oder Termin buchen</button>
+        </div>
+
+        <p class="text-xs text-white/60 mt-2">Direktkontakt: <a class="text-primary underline" href="mailto:hello@spec88.com">hello@spec88.com</a> · Telefon: <a class="text-primary underline" href="tel:+49DEINEBUSINESSNUMMER...621">+49 …621</a></p>
       </form>
     </div>
   </section>
@@ -391,9 +272,9 @@
       <div>
         <div class="font-semibold">Impressum</div>
         <div class="mt-2 text-white/80">
-          SPEC88 – David Romanovic Yurko<br/>
-          Tulpenstraße, 63128 Dietzenbach, Deutschland<br/>
-          Telefon: <a href="tel:+4915678400627" class="text-primary">+4915678400627</a><br/>
+          SPEC88 – David Yurko<br/>
+          Tulpenstraße 4, 63128 Dietzenbach, Deutschland<br/>
+          Telefon: <a href="tel:+49DEINEBUSINESSNUMMER...621" class="text-primary">+49 …621</a><br/>
           E-Mail: <a href="mailto:hello@spec88.com" class="text-primary">hello@spec88.com</a><br/>
           Verantwortlich gemäß § 5 TMG: David Yurko
         </div>
@@ -411,37 +292,33 @@
     <div class="container-lg mt-8 text-white/60 text-xs">© 2025 SPEC88 – Alle Rechte vorbehalten.</div>
   </footer>
 
-  <!-- Modals: Impressum & Datenschutz -->
-  <dialog id="impressumModal" role="dialog" aria-modal="true" aria-labelledby="impressumTitle"
-          class="w-[min(900px,92vw)] rounded-2xl p-0 bg-background border border-white/10">
+  <!-- Modals -->
+  <dialog id="impressumModal" class="w-[min(900px,92vw)] rounded-2xl p-0 bg-background border border-white/10">
     <div class="p-6 space-y-3">
       <div class="flex items-center justify-between">
-        <h3 id="impressumTitle" class="text-xl font-semibold">Impressum</h3>
-        <button onclick="closeModal('impressumModal')" aria-label="Schließen"
-                class="px-3 py-1 rounded-lg border border-white/10 hover:border-primary/50">Schließen</button>
+        <h3 class="text-xl font-semibold">Impressum</h3>
+        <button onclick="closeModal('impressumModal')" class="px-3 py-1 rounded-lg border border-white/10 hover:border-primary/50">Schließen</button>
       </div>
       <div class="text-white/80 text-sm">
         SPEC88 – David Yurko<br/>
         Tulpenstraße 4, 63128 Dietzenbach, Deutschland<br/>
-        Telefon: +49 163 8621972<br/>
+        Telefon: +49 …621<br/>
         E-Mail: hello@spec88.com<br/>
         Verantwortlich gemäß § 5 TMG: David Yurko
       </div>
     </div>
   </dialog>
 
-  <dialog id="datenschutzModal" role="dialog" aria-modal="true" aria-labelledby="datenschutzTitle"
-          class="w-[min(900px,92vw)] rounded-2xl p-0 bg-background border border-white/10">
+  <dialog id="datenschutzModal" class="w-[min(900px,92vw)] rounded-2xl p-0 bg-background border border-white/10">
     <div class="p-6 space-y-3">
       <div class="flex items-center justify-between">
-        <h3 id="datenschutzTitle" class="text-xl font-semibold">Datenschutzerklärung</h3>
-        <button onclick="closeModal('datenschutzModal')" aria-label="Schließen"
-                class="px-3 py-1 rounded-lg border border-white/10 hover:border-primary/50">Schließen</button>
+        <h3 class="text-xl font-semibold">Datenschutzerklärung</h3>
+        <button onclick="closeModal('datenschutzModal')" class="px-3 py-1 rounded-lg border border-white/10 hover:border-primary/50">Schließen</button>
       </div>
       <div class="text-white/80 text-sm space-y-3">
-        <p><strong>Verantwortlicher:</strong><br>SPEC88 – David Yurko, Tulpenstraße 4, 63128 Dietzenbach, Deutschland – E-Mail: <a class="text-primary" href="mailto:hello@spec88.com">hello@spec88.com</a>, Tel: +49 163 8621972.</p>
+        <p><strong>Verantwortlicher:</strong> SPEC88 – David Yurko, Tulpenstraße 4, 63128 Dietzenbach, Deutschland – E-Mail: hello@spec88.com – Tel: +49 …621.</p>
         <p><strong>Zwecke & Rechtsgrundlagen:</strong> Bearbeitung von Anfragen/Projekten (Art. 6 Abs. 1 lit. b DSGVO), technischer Betrieb/IT-Sicherheit (Art. 6 Abs. 1 lit. f DSGVO). Statistik/Marketing nur nach Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).</p>
-        <p><strong>Empfänger & Auftragsverarbeiter:</strong> Hosting & Infrastruktur innerhalb der EU. Eine Übermittlung an Dritte erfolgt nur, soweit für den Betrieb erforderlich (z. B. Formular-Dienst) und mit AV-Vertrag.</p>
+        <p><strong>Empfänger & Auftragsverarbeiter:</strong> Hosting & Infrastruktur innerhalb der EU. Eine Übermittlung an Dritte erfolgt nur, soweit für den Betrieb erforderlich und mit AV-Vertrag.</p>
         <p><strong>Speicherdauer:</strong> Kontaktdaten bis Abschluss der Anfrage bzw. gesetzlicher Aufbewahrung; Protokolldaten werden regelmäßig gelöscht.</p>
         <p><strong>Cookies & Einwilligung:</strong> Essentielle Cookies sind erforderlich. Statistik/Marketing-Cookies werden erst nach Opt-in gesetzt (Consent-Banner). Widerruf jederzeit möglich.</p>
         <p><strong>Betroffenenrechte:</strong> Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf von Einwilligungen, Beschwerde bei einer Aufsichtsbehörde.</p>
@@ -450,10 +327,9 @@
   </dialog>
 
   <!-- Cookie Banner -->
-  <dialog id="cookieBanner" role="dialog" aria-modal="true" aria-labelledby="cookieTitle"
-          class="w-[min(900px,92vw)] rounded-2xl p-0 bg-background border border-white/10">
+  <dialog id="cookieBanner" class="w-[min(900px,92vw)] rounded-2xl p-0 bg-background border border-white/10">
     <form method="dialog" class="p-6">
-      <h3 id="cookieTitle" class="text-xl font-semibold">Cookie-Einstellungen</h3>
+      <h3 class="text-xl font-semibold">Cookie-Einstellungen</h3>
       <p class="text-white/80 text-sm mt-2">Wir verwenden Cookies für den zuverlässigen Betrieb dieser Website. Statistik/Marketing werden nur nach deiner Einwilligung gesetzt.</p>
       <div class="grid md:grid-cols-3 gap-4 mt-4">
         <div class="glass rounded-2xl p-4">
@@ -480,93 +356,51 @@
     </form>
   </dialog>
 
-  <!-- Scripts -->
+  <!-- Helpers -->
   <script>
-    // Modal helpers
-    function openImpressum(e){ e?.preventDefault(); const d=document.getElementById('impressumModal'); d.showModal(); d.querySelector('button[aria-label="Schließen"]')?.focus(); }
-    function openDatenschutz(e){ e?.preventDefault(); const d=document.getElementById('datenschutzModal'); d.showModal(); d.querySelector('button[aria-label="Schließen"]')?.focus(); }
+    function openImpressum(e){ e?.preventDefault(); document.getElementById('impressumModal').showModal(); }
+    function openDatenschutz(e){ e?.preventDefault(); document.getElementById('datenschutzModal').showModal(); }
     function closeModal(id){ document.getElementById(id).close(); }
     function openCookieBanner(e){ e?.preventDefault(); document.getElementById('cookieBanner').showModal(); }
   </script>
 
-  <!-- Consent + optional Analytics -->
+  <!-- Formspree submit (AJAX, bleibt auf Seite) -->
   <script>
-    const KEY = 'spec88_consent_v1';
-    const banner = document.getElementById('cookieBanner');
-    const stats = document.getElementById('consentStats');
-    const mkt = document.getElementById('consentMkt');
+    const FORMSPREE_ENDPOINT = "https://formspree.io/f/mvgqewzy";
+    const form = document.getElementById('contactForm');
 
-    function getConsent(){ try { return JSON.parse(localStorage.getItem(KEY) || '{}'); } catch { return {}; } }
-    function setConsent(c){ localStorage.setItem(KEY, JSON.stringify(c)); }
-    function loadScript(src, attrs={}){ return new Promise((res,rej)=>{ const s=document.createElement('script'); s.src=src; s.async=true; Object.entries(attrs).forEach(([k,v])=>s.setAttribute(k,v)); s.onload=res; s.onerror=rej; document.head.appendChild(s); }); }
-
-    async function initializeAnalytics(){
-      // GA4 anonymisiert – nur laden, wenn Statistik erlaubt:
-      // Ersetze die ID oder entferne komplett, wenn nicht genutzt.
-      const GA_ID = 'G-XXXXXXX';
-      if (GA_ID === 'G-XXXXXXX') return; // nicht aktiv ohne echte ID
-      await loadScript('https://www.googletagmanager.com/gtag/js?id='+GA_ID);
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){ dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', GA_ID, { 'anonymize_ip': true, 'allow_google_signals': false });
-      console.log('[Consent] Statistik aktiviert');
+    async function sendFormspree(data){
+      return fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: data
+      });
     }
-    function initializeMarketing(){ console.log('[Consent] Marketing aktiviert'); }
 
-    function applyConsent(c){
-      if (!c || !c.set) return;
-      if (c.statistics) initializeAnalytics();
-      if (c.marketing) initializeMarketing();
-    }
-    function initConsent(){
-      const c = getConsent();
-      if (!('set' in c)) { banner?.showModal(); }
-      if (stats) stats.checked = !!c.statistics;
-      if (mkt) mkt.checked = !!c.marketing;
-      applyConsent(c);
-    }
-    banner?.addEventListener('submit', (e) => {
-      const val = e.submitter?.value; let c = {};
-      if (val === 'accept') c = { set:true, necessary:true, statistics:true, marketing:true };
-      else if (val === 'reject') c = { set:true, necessary:true, statistics:false, marketing:false };
-      else if (val === 'save') c = { set:true, necessary:true, statistics:!!stats?.checked, marketing:!!mkt?.checked };
-      setConsent(c); applyConsent(c);
-    });
-    document.addEventListener('DOMContentLoaded', initConsent);
-  </script>
-
-  <!-- Form submit via Formspree -->
-  <script>
-    async function handleSubmit(e){
+    form?.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const form = e.target;
-      const consentGiven = document.getElementById('consent')?.checked;
-      if (!consentGiven) { alert('Bitte stimme der Datenverarbeitung zu.'); return; }
-      if (form.querySelector('#website')?.value) { return; } // honeypot
+      const hp = document.getElementById('website');
+      if (hp && hp.value) return; // Honeypot
+      const consent = document.getElementById('consent')?.checked;
+      if (!consent) { alert('Bitte stimme der Datenverarbeitung zu.'); return; }
 
-      const payload = {
-        name: form.name.value.trim(),
-        company: form.company.value.trim(),
-        email: form.email.value.trim(),
-        message: form.message.value.trim(),
-        ts: new Date().toISOString()
-      };
+      const fd = new FormData(form);
+      fd.append('_subject', 'Neue Nachricht über SPEC88.de');
+      fd.append('_language', 'de');
 
       try {
-        const r = await fetch('FORMSPREE_ENDPOINT_ID', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-          body: JSON.stringify(payload)
-        });
-        if (!r.ok) throw new Error('Netzwerkfehler');
-        form.reset();
-        alert('Danke! Wir melden uns in Kürze für deinen Tester.');
-      } catch (err) {
+        const r = await sendFormspree(fd);
+        if (r.ok) {
+          form.reset();
+          alert('Danke! Deine Nachricht wurde versendet. Wir melden uns in Kürze.');
+        } else {
+          alert('Senden fehlgeschlagen. Bitte schreibe direkt an hello@spec88.com.');
+        }
+      } catch(err){
         console.error(err);
-        alert('Senden fehlgeschlagen. Bitte schreib direkt an hello@spec88.com.');
+        alert('Netzwerkfehler. Bitte versuche es später erneut oder schreibe an hello@spec88.com.');
       }
-    }
+    });
   </script>
 
 </body>
