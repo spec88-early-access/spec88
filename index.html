@@ -2,434 +2,322 @@
 <html lang="de">
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>SPEC88 – Intelligente KI-Agenten | Starter, Standard & Erweitert + Tester</title>
-  <meta name="description" content="SPEC88 baut intelligente KI-Agenten für Unternehmen. Starter-, Standard- und Erweitert-Pakete plus günstiger Tester. In 7–14 Tagen live. DSGVO-konform, EU-Server." />
-  <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://www.spec88.com/" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="SPEC88 – Intelligente KI-Agenten für Unternehmen" />
-  <meta property="og:description" content="Automatisiere Recherche, Kommunikation und Service. Starter/Standard/Erweitert + Tester." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.spec88.com/" />
-  <meta property="og:image" content="https://www.spec88.com/og-spec88.jpg" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="SPEC88 – Intelligente KI-Agenten für Unternehmen" />
-  <meta name="twitter:description" content="Pakete: Starter, Standard, Erweitert + Tester. 7–14 Tage Umsetzung. DSGVO-konform." />
-  <meta name="twitter:image" content="https://www.spec88.com/og-spec88.jpg" />
-
-  <!-- Icons / Theme -->
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <meta name="theme-color" content="#090E16" />
-
-  <!-- Perf -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>SPEC88 – 20 qualifizierte Sales‑Calls in 30 Tagen (ohne Ads)</title>
+  <meta name="description" content="SPEC88 baut und betreibt Ihre Terminmaschine: 20 qualifizierte Sales‑Calls in 30 Tagen – AI‑Personalisierung + Multichannel‑Outreach."
+  />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
-  <!-- Fonts + Tailwind -->
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            background: '#090E16',
-            primary: '#2EF7D0',
-            text: '#F9FAFB',
-            hover: '#3B82F6',
-            darkblue: '#0A2540'
-          },
-          fontFamily: { sans: ['Manrope','Sora','ui-sans-serif','system-ui','Segoe UI','Roboto','Helvetica Neue','Arial'] },
-          boxShadow: { soft: '0 10px 30px rgba(46,247,208,0.12)' }
-        }
-      }
-    }
-  </script>
-
-  <!-- Calendly embed -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-
+  <meta property="og:title" content="SPEC88 – 20 qualifizierte Sales‑Calls in 30 Tagen" />
+  <meta property="og:description" content="AI‑Personalisierung + Multichannel‑Outreach. Sie erscheinen nur zum Call." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://spec88.com" />
+  <meta name="theme-color" content="#0A2540" />
   <style>
-    html { scroll-behavior: smooth; }
-    body {
-      background:
-        radial-gradient(1200px 600px at 20% -10%, rgba(46,247,208,0.08), transparent 60%),
-        radial-gradient(1000px 500px at 80% 0%, rgba(59,130,246,0.08), transparent 60%),
-        linear-gradient(180deg, #090E16 0%, #0A2540 100%);
-      color:#F9FAFB;
+    :root{
+      --brand:#0A2540;        /* Dunkelblau */
+      --accent:#2EF7D0;       /* Elektrisches Türkis */
+      --ink:#F9FAFB;          /* Warmes Weiß */
+      --muted:#E5E7EB;        /* Sanftes Grau */
+      --blue:#3B82F6;         /* Indigo/Blau */
+      --night:#090E16;        /* Schwarz mit Blaustich */
     }
-    .container-lg { max-width:1200px; margin:0 auto; padding:0 1rem; }
-    .glass { background: rgba(255,255,255,0.04); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.06); }
-    .btn { border-radius:9999px; box-shadow:0 6px 18px rgba(46,247,208,0.25); transition: transform .15s ease, box-shadow .2s ease; }
-    .btn:hover { transform: translateY(-1px); box-shadow:0 10px 28px rgba(59,130,246,0.25); }
-    .badge { display:inline-block; border:1px solid rgba(255,255,255,0.12); padding:.35rem .6rem; border-radius:9999px; font-size:.8rem; }
-    input, textarea { color:#F9FAFB; }
-    ::placeholder { color: rgba(249,250,251,.6); }
+    html,body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";}
+    /* Subtle animated gradient background */
+    .bg-animated{
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(46,247,208,.12), transparent 45%),
+                  radial-gradient(1000px 500px at 90% 10%, rgba(59,130,246,.12), transparent 45%),
+                  radial-gradient(1000px 500px at 50% 90%, rgba(46,247,208,.10), transparent 50%),
+                  linear-gradient(180deg, #0A2540, #090E16 60%);
+    }
+    .glass{backdrop-filter:saturate(160%) blur(10px); background:rgba(10,37,64,.42);}
+    .pill{border:1px solid rgba(255,255,255,.2);}
+    .shadow-soft{box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .list-check li{position:relative;padding-left:1.75rem}
+    .list-check li::before{content:"✓";position:absolute;left:.25rem;color:var(--accent);font-weight:700}
+    .list-dot li{list-style:disc;margin-left:1.25rem}
+    .badge{border:1px solid rgba(46,247,208,.35)}
   </style>
+  <script>
+    // Smooth scroll for anchor links
+    document.addEventListener('click', (e)=>{
+      const a = e.target.closest('a[href^="#"]');
+      if(!a) return;
+      const id = a.getAttribute('href');
+      const el = document.querySelector(id);
+      if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
+    });
+  </script>
 </head>
-<body class="font-sans antialiased">
-
+<body class="bg-animated text-white selection:bg-teal-300/40 selection:text-white">
   <!-- Header -->
-  <header class="sticky top-0 z-40 backdrop-blur bg-background/70 border-b border-white/5">
-    <div class="container-lg flex items-center justify-between py-4">
-      <a href="#top" class="flex items-center gap-2">
-        <div class="h-9 w-9 rounded-2xl bg-primary/20 flex items-center justify-center shadow-soft">
-          <span class="text-primary font-extrabold">S</span>
-        </div>
-        <span class="text-lg font-semibold tracking-wide">SPEC88</span>
+  <header class="sticky top-0 z-40 backdrop-blur bg-black/25 border-b border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="h-8 w-8 rounded-2xl bg-teal-300/90"></div>
+        <span class="font-extrabold tracking-tight text-xl">SPEC88</span>
       </a>
-      <nav class="hidden md:flex items-center gap-8 text-sm">
-        <a href="#features" class="opacity-80 hover:opacity-100">Funktionen</a>
-        <a href="#security" class="opacity-80 hover:opacity-100">Sicherheit</a>
-        <a href="#process" class="opacity-80 hover:opacity-100">Ablauf</a>
-        <a href="#pricing" class="opacity-80 hover:opacity-100">Pakete</a>
-        <a href="#tester" class="opacity-80 hover:opacity-100">Tester</a>
-        <a href="#book" class="opacity-80 hover:opacity-100">Termin</a>
-        <a href="#contact" class="opacity-80 hover:opacity-100">Kontakt</a>
+      <nav class="hidden md:flex items-center gap-8 text-sm text-white/80">
+        <a href="#ergebnis" class="hover:text-white">Ergebnis</a>
+        <a href="#ablauf" class="hover:text-white">Ablauf</a>
+        <a href="#preise" class="hover:text-white">Preise</a>
+        <a href="#faq" class="hover:text-white">FAQ</a>
+        <a href="#kontakt" class="hover:text-white">Kontakt</a>
       </nav>
       <div class="flex items-center gap-3">
-        <button onclick="document.getElementById('book').scrollIntoView({behavior:'smooth'})" class="btn bg-primary text-background font-semibold px-5 py-2 hover:bg-hover">Termin buchen</button>
+        <a href="#preise" class="hidden sm:inline-flex px-4 py-2 rounded-xl pill bg-white/10 hover:bg-white/15">Preise</a>
+        <a target="_blank" rel="noopener" href="https://calendly.com/spec88/plan" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-teal-400 hover:bg-teal-300 text-black font-semibold shadow-soft">
+          10‑Min‑Planung buchen
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </a>
       </div>
     </div>
   </header>
 
   <!-- Hero -->
-  <section id="top" class="relative overflow-hidden">
-    <div class="container-lg grid md:grid-cols-2 gap-10 items-center py-16 md:py-24">
-      <div class="space-y-6">
-        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">
-          Intelligente <span class="text-primary">KI-Agenten</span> – in 7–14 Tagen live
-        </h1>
-        <p class="text-lg md:text-xl text-white/80">Automatisiere Recherche, Kommunikation & Service. Starter-, Standard- und Erweitert-Pakete <em>plus</em> günstiger Tester. DSGVO-konform, EU-Server.</p>
-        <div class="flex items-center gap-3">
-          <span class="badge text-white/80">Neu: <strong class="text-primary">Starter ab 999 € Setup</strong> · nur <strong class="text-primary">499 €/Monat</strong></span>
+  <section class="relative">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 badge rounded-full px-3 py-1 text-xs text-teal-200/90 mb-5">
+            <span class="h-2 w-2 rounded-full bg-teal-300"></span>
+            AI‑Personalisierung · Multichannel‑Outreach
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+            In 30 Tagen: <span class="text-teal-300">20 qualifizierte Sales‑Calls</span> für Agenturen
+          </h1>
+          <p class="mt-5 text-white/80 text-lg">Sie erscheinen nur zum Call. Wir erledigen Research, Personalisierung, Sequenzen, Buchung und Reminder – ohne Ads.</p>
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+            <a target="_blank" rel="noopener" href="https://calendly.com/spec88/plan" class="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-teal-400 hover:bg-teal-300 text-black font-bold text-sm shadow-soft">
+              10‑Min‑Planung buchen
+            </a>
+            <a href="#ergebnis" class="inline-flex items-center gap-2 px-6 py-3 rounded-2xl border border-white/20 hover:bg-white/10 text-sm">Wie es funktioniert</a>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-4 text-xs text-white/60">
+            <div class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-white/50"></span> Show‑Rate ≥ 80 % · Ersatz bei No‑Show</div>
+            <div class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-white/50"></span> EU‑DSGVO‑konform (DACH: Telefon/LinkedIn/Brief)</div>
+          </div>
         </div>
-        <div class="flex flex-col sm:flex-row gap-4">
-          <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/davidyurko28/gesprach'}); return false;" class="btn bg-primary text-background font-semibold px-6 py-3 hover:bg-hover">Sofort Termin wählen</button>
-          <a href="#pricing" class="px-6 py-3 rounded-full border border-white/10 hover:border-primary/50">Pakete ansehen</a>
+        <div class="glass rounded-3xl p-6 md:p-8 shadow-soft">
+          <h3 class="text-xl font-semibold mb-4">Was Sie konkret bekommen</h3>
+          <ul class="list-check grid gap-3 text-white/90">
+            <li>ICP‑Schärfung & 1.500+ geprüfte Prospects</li>
+            <li>AI‑First‑Lines & personalisierte Touchpoints</li>
+            <li>4‑stufige E‑Mail‑Sequenz (US/UK) + LinkedIn‑Flow</li>
+            <li>Qualifizierung (Entscheider · Bedarf ≤90 Tage · Use‑Case)</li>
+            <li>Booking inkl. Kalendereinladung & T‑24h/T‑2h Reminder</li>
+            <li>Dashboard & 2×/Woche Pipeline‑Report</li>
+          </ul>
         </div>
-        <div class="text-xs text-white/60">SSL-verschlüsselt · Server in der EU · DSGVO-konform</div>
       </div>
+    </div>
+  </section>
 
-      <div class="glass p-6 shadow-soft min-h-[320px] md:min-h-[380px] rounded-3xl">
-        <div class="grid grid-cols-3 gap-6">
-          <div class="glass rounded-2xl p-4">
-            <div class="text-sm uppercase tracking-widest text-white/60">Research</div>
-            <div class="mt-2 text-2xl font-bold">⚙️</div>
-            <p class="text-white/70 text-sm mt-2">Konkurrenz, Trends, Reports</p>
+  <!-- Ergebnis & SLA -->
+  <section id="ergebnis" class="relative border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid lg:grid-cols-3 gap-8 items-start">
+        <div class="lg:col-span-1">
+          <h2 class="text-2xl sm:text-3xl font-extrabold">Ergebnis & SLA</h2>
+          <p class="mt-3 text-white/70">Wir messen am **QCB**: <span class="text-white">Qualified Calls Booked</span> in 30 Tagen.</p>
+        </div>
+        <div class="lg:col-span-2 grid md:grid-cols-2 gap-6">
+          <div class="rounded-2xl bg-white/5 p-6">
+            <h3 class="font-semibold text-teal-300 mb-2">Definition „qualifizierter Call“</h3>
+            <ul class="list-check space-y-2 text-white/90">
+              <li>Entscheider (Owner/Head Marketing/Revenue)</li>
+              <li>Konkretes Problem/Use‑Case benannt</li>
+              <li>Umsetzungsfenster ≤ 90 Tage</li>
+              <li>30–45 Min Slot, Kalendereinladung akzeptiert</li>
+              <li>Kontaktdaten verifiziert (Mail/Telefon, Zeitzone)</li>
+            </ul>
           </div>
-          <div class="glass rounded-2xl p-4">
-            <div class="text-sm uppercase tracking-widest text-white/60">Content</div>
-            <div class="mt-2 text-2xl font-bold">🧠</div>
-            <p class="text-white/70 text-sm mt-2">Briefings, Posts, E-Mails</p>
-          </div>
-          <div class="glass rounded-2xl p-4">
-            <div class="text-sm uppercase tracking-widest text-white/60">Service</div>
-            <div class="mt-2 text-2xl font-bold">🤖</div>
-            <p class="text-white/70 text-sm mt-2">FAQ, Intake, Übergaben</p>
-          </div>
-          <div class="glass rounded-2xl p-4 col-span-3">
-            <div class="text-white/70 text-sm">SPEC88 orchestriert Agenten sicher mit Policies, Logs & Limits – produktiv statt spielerisch.</div>
+          <div class="rounded-2xl bg-white/5 p-6">
+            <h3 class="font-semibold text-teal-300 mb-2">SLA & Garantie</h3>
+            <ul class="list-check space-y-2 text-white/90">
+              <li>Ziel: <strong>20</strong> qualifizierte Calls in 30 Tagen</li>
+              <li>Show‑Rate Ziel: <strong>≥ 80 %</strong></li>
+              <li>No‑Show? Ersatztermin innerhalb 7 Tagen</li>
+              <li>Unter Ziel → wir arbeiten weiter, bis erfüllt</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Features -->
-  <section id="features" class="py-20 border-t border-white/5">
-    <div class="container-lg">
-      <h2 class="text-2xl md:text-4xl font-bold mb-10">Smarte KI-Agenten. Echte Ergebnisse.</h2>
+  <!-- Ablauf in 5 Schritten -->
+  <section id="ablauf" class="relative border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+      <div class="text-center mb-12">
+        <h2 class="text-2xl sm:text-3xl font-extrabold">Plan in 5 Schritten</h2>
+        <p class="mt-3 text-white/70">Schnell, transparent, messbar – ohne Ads.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div class="rounded-2xl bg-white/5 p-6">
+          <span class="text-teal-300 font-bold">01</span>
+          <h3 class="font-semibold mt-1">ICP & Zielmärkte</h3>
+          <p class="text-white/70 mt-2">Wunschkunden definieren, Buying‑Trigger und Ausschlusskriterien festlegen.</p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <span class="text-teal-300 font-bold">02</span>
+          <h3 class="font-semibold mt-1">Liste & Enrichment</h3>
+          <p class="text-white/70 mt-2">1.500+ Prospects, Entscheidernamen, Work‑E‑Mails (US/UK), Tech‑Stack, Signale.</p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <span class="text-teal-300 font-bold">03</span>
+          <h3 class="font-semibold mt-1">AI‑First‑Lines</h3>
+          <p class="text-white/70 mt-2">Personalisierte Einstiege aus echten Profil/Website‑Insights.</p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <span class="text-teal-300 font-bold">04</span>
+          <h3 class="font-semibold mt-1">Sequenzen</h3>
+          <p class="text-white/70 mt-2">4‑stufige E‑Mail (US/UK) + LinkedIn‑Flow, Follow‑ups & Throttling.</p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <span class="text-teal-300 font-bold">05</span>
+          <h3 class="font-semibold mt-1">Booking & Reminder</h3>
+          <p class="text-white/70 mt-2">Calendly‑Buchung, T‑24h/T‑2h‑Reminder, No‑Show‑Ersatz binnen 7 Tagen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preise -->
+  <section id="preise" class="relative border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+      <div class="text-center mb-12">
+        <h2 class="text-2xl sm:text-3xl font-extrabold">Preise</h2>
+        <p class="mt-3 text-white/70">Transparent. Ergebnisorientiert. Exklusive USt.</p>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-6">
+        <!-- Pilot -->
+        <div class="rounded-3xl bg-white/5 p-6 lg:p-8 flex flex-col">
+          <div class="text-sm text-white/60">Einstieg</div>
+          <h3 class="text-2xl font-extrabold mt-1">Pilot</h3>
+          <div class="mt-3 text-3xl font-extrabold text-teal-300">599 €</div>
+          <div class="text-white/60 text-sm">10 Tage · Ziel: 8 qualifizierte Calls</div>
+          <ul class="list-check mt-6 space-y-2 text-white/90">
+            <li>ICP & Liste (500+)</li>
+            <li>AI‑First‑Lines & 2 Kanäle</li>
+            <li>Kalender‑Setup & Reminder</li>
+            <li>Report & Entscheidungsempfehlung</li>
+          </ul>
+          <a target="_blank" rel="noopener" href="https://calendly.com/spec88/plan" class="mt-8 inline-flex justify-center items-center gap-2 px-5 py-3 rounded-2xl bg-white/10 hover:bg-white/15">Pilot anfragen</a>
+        </div>
+        <!-- Sprint -->
+        <div class="rounded-3xl bg-white/10 p-6 lg:p-8 ring-2 ring-teal-300/70 shadow-soft flex flex-col">
+          <div class="text-sm text-white/60">30‑Tage Run</div>
+          <h3 class="text-2xl font-extrabold mt-1">Sprint 30T</h3>
+          <div class="mt-3 text-3xl font-extrabold"><span class="text-teal-300">1.200 €</span> Setup</div>
+          <div class="text-white/80 text-sm">+ 700 €/Monat · + 120 €/Call</div>
+          <ul class="list-check mt-6 space-y-2 text-white/90">
+            <li>Ziel: 20 qualifizierte Calls/30 Tage</li>
+            <li>Multichannel‑Outreach (Mail US/UK + LinkedIn)</li>
+            <li>Quali, Booking, Reminder, Re‑Book</li>
+            <li>Dashboard & 2×/Woche Report</li>
+          </ul>
+          <a target="_blank" rel="noopener" href="https://calendly.com/spec88/plan" class="mt-8 inline-flex justify-center items-center gap-2 px-5 py-3 rounded-2xl bg-teal-400 hover:bg-teal-300 text-black font-semibold">10‑Min‑Planung buchen</a>
+        </div>
+        <!-- Build & Run -->
+        <div class="rounded-3xl bg-white/5 p-6 lg:p-8 flex flex-col">
+          <div class="text-sm text-white/60">High‑Ticket</div>
+          <h3 class="text-2xl font-extrabold mt-1">Build & Run 30T</h3>
+          <div class="mt-3 text-3xl font-extrabold text-teal-300">9.800 €</div>
+          <div class="text-white/60 text-sm">End‑to‑End Aufbau & Betrieb</div>
+          <ul class="list-check mt-6 space-y-2 text-white/90">
+            <li>Systemaufbau + 1.500+ Prospects</li>
+            <li>AI‑Personalisierung & Sequenzen</li>
+            <li>Komplette Termin‑Buchung & Quali</li>
+            <li>Alle Assets + Übergabe‑SOPs</li>
+          </ul>
+          <a target="_blank" rel="noopener" href="https://calendly.com/spec88/plan" class="mt-8 inline-flex justify-center items-center gap-2 px-5 py-3 rounded-2xl bg-white/10 hover:bg-white/15">Beratungsgespräch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="relative border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+      <div class="text-center mb-12">
+        <h2 class="text-2xl sm:text-3xl font-extrabold">FAQ</h2>
+        <p class="mt-3 text-white/70">Kurz, klar, ohne Marketing‑Blabla.</p>
+      </div>
       <div class="grid md:grid-cols-2 gap-6">
-        <div class="glass rounded-3xl p-6"><h3 class="text-xl font-semibold">Agent-Gateway (by SPEC88)</h3><p class="text-white/80 mt-2">Sichere Orchestrierung: Zugriff, Quoten, Routing, Protokolle. Stabil & kontrollierbar.</p></div>
-        <div class="glass rounded-3xl p-6"><h3 class="text-xl font-semibold">Agent-Katalog</h3><p class="text-white/80 mt-2">Vorgefertigte Agenten für Research, Content & Service. Klar definierte Inputs/Outputs.</p></div>
-        <div class="glass rounded-3xl p-6"><h3 class="text-xl font-semibold">API-Tool-Layer</h3><p class="text-white/80 mt-2">Bestehende Systeme als „Tools“ angebunden – versioniert & auditierbar.</p></div>
-        <div class="glass rounded-3xl p-6"><h3 class="text-xl font-semibold">Multi-Agent · Multi-LLM</h3><p class="text-white/80 mt-2">Zusammenspiel mehrerer Agenten & Modelle – Policies für Kosten & Qualität.</p></div>
+        <details class="rounded-2xl bg-white/5 p-6" open>
+          <summary class="font-semibold cursor-pointer">Was zählt als „qualifizierter Call“?</summary>
+          <p class="mt-3 text-white/80">Entscheider, konkretes Problem, Umsetzung ≤ 90 Tage, 30–45 Min Slot mit Einladung, Kontaktdaten verifiziert.</p>
+        </details>
+        <details class="rounded-2xl bg-white/5 p-6">
+          <summary class="font-semibold cursor-pointer">Wie stellen Sie die Show‑Rate sicher?</summary>
+          <p class="mt-3 text-white/80">Kalendereinladung sofort, Reminder T‑24h & T‑2h (E‑Mail/SMS), klarer Nutzen in der Einladung, No‑Show → Ersatztermin binnen 7 Tagen.</p>
+        </details>
+        <details class="rounded-2xl bg-white/5 p-6">
+          <summary class="font-semibold cursor-pointer">Welche Kanäle nutzen Sie?</summary>
+          <p class="mt-3 text-white/80">US/UK: E‑Mail (mit Adresse & Opt‑out) + LinkedIn. DACH: Telefon & LinkedIn & Brief. Kein Kalt‑E‑Mailing in DACH.</p>
+        </details>
+        <details class="rounded-2xl bg-white/5 p-6">
+          <summary class="font-semibold cursor-pointer">Wie läuft die Zusammenarbeit?</summary>
+          <p class="mt-3 text-white/80">Kickoff (30 Min) → 14 Tage Setup → 30 Tage Run. Zwei Reports/Woche. Zugang zu Kalender & CRM. Exklusivität je Sub‑Nische/Region.</p>
+        </details>
       </div>
     </div>
   </section>
 
-  <!-- Security -->
-  <section id="security" class="py-20 border-t border-white/5">
-    <div class="container-lg">
-      <h2 class="text-2xl md:text-4xl font-bold mb-10">Sicherheit, Kontrolle & Transparenz</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="glass rounded-3xl p-6"><h3 class="text-xl font-semibold">Kontext-Guardrails</h3><p class="text-white/80 mt-2">Rollen, Policies, Domain-Whitelist. Daten bleiben dort, wo sie hingehören.</p></div>
-        <div class="glass rounded-3xl p-6"><h3 class="text-xl font-semibold">Kosten-Monitoring</h3><p class="text-white/80 mt-2">Transparente Nutzung pro Agent/LLM. Limits & Anomalie-Alarme.</p></div>
-        <div class="glass rounded-3xl p-6"><h3 class="text-xl font-semibold">Ereignis-Logs</h3><p class="text-white/80 mt-2">Revisionssicheres Logging für Audits & QS. DSGVO-konform, EU-Server.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Process -->
-  <section id="process" class="py-20 border-t border-white/5">
-    <div class="container-lg">
-      <h2 class="text-2xl md:text-4xl font-bold mb-10">So funktioniert es in 3 Schritten</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="glass rounded-3xl p-6"><div class="text-sm text-primary font-semibold">Schritt 1</div><h3 class="text-xl font-semibold mt-1">Beratung & Analyse</h3><p class="text-white/70 mt-2">Wir identifizieren Aufgaben, die sich automatisieren lassen.</p></div>
-        <div class="glass rounded-3xl p-6"><div class="text-sm text-primary font-semibold">Schritt 2</div><h3 class="text-xl font-semibold mt-1">Agent-Setup</h3><p class="text-white/70 mt-2">Dein KI-Agent wird in 7–14 Tagen erstellt.</p></div>
-        <div class="glass rounded-3xl p-6"><div class="text-sm text-primary font-semibold">Schritt 3</div><h3 class="text-xl font-semibold mt-1">Go-Live & Betreuung</h3><p class="text-white/70 mt-2">Automatisierte Abläufe mit Updates, Reports & Support.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRICING -->
-  <section id="pricing" class="py-20 border-t border-white/5">
-    <div class="container-lg">
-      <h2 class="text-2xl md:text-4xl font-bold mb-10">Pakete & Preise</h2>
-      <div class="grid md:grid-cols-3 gap-6 items-stretch">
-        <!-- Starter -->
-        <div class="glass rounded-3xl p-6 flex flex-col">
-          <h3 class="text-xl font-semibold">Starter</h3>
-          <p class="text-3xl font-extrabold mt-2">999 € <span class="text-white/60 text-base font-medium">Setup</span></p>
-          <p class="text-lg font-semibold">+ 499 €/Monat</p>
-          <ul class="mt-4 text-white/80 space-y-1">
-            <li>• 1 Agent (z. B. FAQ/Intake)</li>
-            <li>• 1 Prozess</li>
-            <li>• Basis-Reporting (monatlich)</li>
-          </ul>
-          <div class="mt-auto flex gap-3 pt-4">
-            <a href="#book" class="btn bg-primary text-background font-semibold px-5 py-3 hover:bg-hover">Termin</a>
-            <a href="#contact" class="px-5 py-3 rounded-full border border-white/10 hover:border-primary/50">Kontakt</a>
-          </div>
-        </div>
-        <!-- Standard -->
-        <div class="glass rounded-3xl p-6 border border-primary/30 shadow-soft flex flex-col">
-          <h3 class="text-xl font-semibold">Standard</h3>
-          <p class="text-3xl font-extrabold mt-2">1 999 € <span class="text-white/60 text-base font-medium">Setup</span></p>
-          <p class="text-lg font-semibold">+ 989 €/Monat</p>
-          <ul class="mt-4 text-white/80 space-y-1">
-            <li>• bis 3 Agenten</li>
-            <li>• 2–3 Prozesse (Research/Content/Service)</li>
-            <li>• Monatliche Optimierung & Reports</li>
-          </ul>
-          <div class="mt-auto flex gap-3 pt-4">
-            <a href="#book" class="btn bg-primary text-background font-semibold px-5 py-3 hover:bg-hover">Termin</a>
-            <a href="#contact" class="px-5 py-3 rounded-full border border-white/10 hover:border-primary/50">Kontakt</a>
-          </div>
-        </div>
-        <!-- Erweitert -->
-        <div class="glass rounded-3xl p-6 flex flex-col">
-          <h3 class="text-xl font-semibold">Erweitert</h3>
-          <p class="text-3xl font-extrabold mt-2">2 999 € <span class="text-white/60 text-base font-medium">Setup</span></p>
-          <p class="text-lg font-semibold">+ 1 989 €/Monat</p>
-          <ul class="mt-4 text-white/80 space-y-1">
-            <li>• 4–6 Agenten inkl. Integrationen</li>
-            <li>• Individuelle Datenquellen & Policies</li>
-            <li>• SLA, Prioritäts-Support, wöchentliche Reports</li>
-          </ul>
-          <div class="mt-auto flex gap-3 pt-4">
-            <a href="#book" class="btn bg-primary text-background font-semibold px-5 py-3 hover:bg-hover">Termin</a>
-            <a href="#contact" class="px-5 py-3 rounded-full border border-white/10 hover:border-primary/50">Kontakt</a>
-          </div>
-        </div>
-      </div>
-      <p class="text-white/60 text-sm mt-4">Alle Preise zzgl. MwSt. Individuelle Enterprise-Lösungen auf Anfrage.</p>
-    </div>
-  </section>
-
-  <!-- TESTER -->
-  <section id="tester" class="py-20 border-t border-white/5">
-    <div class="container-lg">
-      <h2 class="text-2xl md:text-4xl font-bold mb-6">Tester (einmalig)</h2>
-    <div class="glass rounded-3xl p-6 md:p-8">
-      <p class="text-white/80">Schneller Einstieg ohne Risiko: Wir setzen einen Agenten als Tester auf, zeigen Output & Logs und empfehlen die nächsten Schritte. Ideal, um Nutzen & Machbarkeit zu prüfen.</p>
-      <ul class="text-white/80 mt-4 space-y-2 list-disc list-inside">
-        <li>Preis: <strong class="text-primary">249 €</strong> zzgl. MwSt.</li>
-        <li>Remote-Umsetzung, inkl. Onboarding-Fragebogen</li>
-        <li>Quellen-Whitelist & Kostenlimit</li>
-        <li>Report (PDF) + Empfehlung</li>
-      </ul>
-      <div class="flex gap-3 mt-6">
-        <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/davidyurko28/gesprach'}); return false;" class="btn bg-primary text-background font-semibold px-6 py-3 hover:bg-hover">Tester-Termin buchen</button>
-        <a href="#book" class="px-6 py-3 rounded-full border border-white/10 hover:border-primary/50">Kalender anzeigen</a>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <!-- BOOKING: Calendly -->
-  <section id="book" class="py-20 border-t border-white/5">
-    <div class="container-lg max-w-4xl">
-      <h2 class="text-2xl md:text-4xl font-bold mb-6">Termin vereinbaren</h2>
-      <p class="text-white/80 mb-6">Buche hier direkt dein Gespräch (30 Minuten). Wir klären Ziele, zeigen passende Automatisierungen und besprechen die nächsten Schritte. DSGVO-konform, EU-Server.</p>
-      <div class="glass rounded-3xl p-2">
-        <div class="calendly-inline-widget"
-             data-url="https://calendly.com/davidyurko28/gesprach"
-             style="min-width:320px;height:760px;"></div>
-      </div>
-      <p class="text-white/60 text-sm mt-4">Hinweis: Das Calendly-Widget lädt Inhalte von calendly.com. Mit Klick können Cookies gesetzt werden (siehe Cookie-Einstellungen).</p>
-    </div>
-  </section>
-
-  <!-- CONTACT: Formspree -->
-  <section id="contact" class="py-20 border-t border-white/5">
-    <div class="container-lg max-w-3xl">
-      <h2 class="text-2xl md:text-4xl font-bold mb-6">Kontakt (Nachricht senden)</h2>
-      <form id="contactForm" class="glass rounded-3xl p-6 space-y-4">
-        <div class="grid md:grid-cols-2 gap-4">
-          <div>
-            <label for="name" class="block text-sm text-white/80 mb-1">Name*</label>
-            <input id="name" name="name" required placeholder="Ihr Name" class="w-full px-4 py-3 rounded-2xl bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary" />
-          </div>
-          <div>
-            <label for="company" class="block text-sm text-white/80 mb-1">Unternehmen</label>
-            <input id="company" name="company" placeholder="Praxis / Studio / Firma" class="w-full px-4 py-3 rounded-2xl bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary" />
-          </div>
-        </div>
+  <!-- Kontakt / Compliance -->
+  <section id="kontakt" class="relative border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid lg:grid-cols-2 gap-10 items-start">
         <div>
-          <label for="email" class="block text-sm text-white/80 mb-1">E-Mail*</label>
-          <input id="email" type="email" name="email" required placeholder="name@domain.de" class="w-full px-4 py-3 rounded-2xl bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary" />
+          <h2 class="text-2xl sm:text-3xl font-extrabold">Kontakt</h2>
+          <p class="mt-3 text-white/70">Fragen? Kurz anrufen oder 10‑Min‑Planung buchen.</p>
+          <div class="mt-6 space-y-2 text-white/90">
+            <div>Mail: <a class="underline decoration-teal-300/60 underline-offset-4" href="mailto:contact@spec88.com">contact@spec88.com</a></div>
+            <div>Kalender: <a class="underline decoration-teal-300/60 underline-offset-4" target="_blank" rel="noopener" href="https://calendly.com/spec88/plan">calendly.com/spec88/plan</a></div>
+          </div>
         </div>
-        <div>
-          <label for="message" class="block text-sm text-white/80 mb-1">Nachricht</label>
-          <textarea id="message" name="message" rows="4" placeholder="Wobei sollen wir helfen?" class="w-full px-4 py-3 rounded-2xl bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <h3 class="font-semibold text-teal-300 mb-2">Hinweise & Compliance</h3>
+          <ul class="list-dot text-white/80 space-y-2">
+            <li>US/UK‑E‑Mails enthalten Firmenadresse & Opt‑out; seriöse, thematisch passende Kontaktaufnahme.</li>
+            <li>DACH: primär Telefon/LinkedIn/Brief; Kalt‑E‑Mail nur nach Einwilligung/Bestandsbeziehung.</li>
+            <li>DSGVO: Auf Wunsch löschen wir Daten unverzüglich; Opt‑out wird dauerhaft respektiert.</li>
+          </ul>
         </div>
-        <!-- Honeypot -->
-        <div style="position:absolute; left:-9999px;" aria-hidden="true">
-          <label>Website (leer lassen)</label>
-          <input id="website" name="website" tabindex="-1" autocomplete="off" />
-        </div>
-        <div class="flex items-start gap-3">
-          <input id="consent" type="checkbox" class="mt-1" required />
-          <label for="consent" class="text-sm text-white/80">Ich willige ein, dass meine Angaben zur Kontaktaufnahme und Projektabwicklung gespeichert und verarbeitet werden (Art. 6 Abs. 1 lit. b DSGVO). Weitere Informationen in der <a href="#datenschutz" onclick="openDatenschutz(event)" class="text-primary underline">Datenschutzerklärung</a>.</label>
-        </div>
-        <div class="flex flex-col sm:flex-row gap-3">
-          <button type="submit" class="btn bg-primary text-background font-semibold px-6 py-3 hover:bg-hover">Nachricht senden</button>
-          <button type="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/davidyurko28/gesprach'}); return false;" class="px-6 py-3 rounded-full border border-white/10 hover:border-primary/50">Oder Termin buchen</button>
-        </div>
-        <p class="text-xs text-white/60 mt-2">Direktkontakt: <a class="text-primary underline" href="mailto:hello@spec88.com">hello@spec88.com</a> · Telefon: <a class="text-primary underline" href="tel:+49DEINEBUSINESSNUMMER...621">+49 …621</a></p>
-      </form>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="border-t border-white/5 py-12">
-    <div class="container-lg grid md:grid-cols-2 gap-6 text-sm">
-      <div>
-        <div class="font-semibold">Impressum</div>
-        <div class="mt-2 text-white/80">
-          SPEC88 – David Yurko<br/>
-          Tulpenstraße 4, 63128 Dietzenbach, Deutschland<br/>
-          Telefon: <a href="tel:+49DEINEBUSINESSNUMMER...621" class="text-primary">+49 …621</a><br/>
-          E-Mail: <a href="mailto:hello@spec88.com" class="text-primary">hello@spec88.com</a><br/>
-          Verantwortlich gemäß § 5 TMG: David Yurko
-        </div>
-      </div>
-      <div>
-        <div class="font-semibold">Datenschutz</div>
-        <p class="mt-2 text-white/80">Wir verarbeiten personenbezogene Daten ausschließlich zum Zweck der Kontaktaufnahme und Projektabwicklung. Server-Hosting innerhalb der EU. Keine Weitergabe an Dritte außer gesetzlicher Pflicht. Du kannst jederzeit Auskunft oder Löschung beantragen.</p>
-        <div class="mt-3 flex gap-4">
-          <a href="#impressum" onclick="openImpressum(event)" class="text-primary underline">Impressum</a>
-          <a href="#datenschutz" onclick="openDatenschutz(event)" class="text-primary underline">Datenschutzerklärung</a>
-          <a href="#cookies" onclick="openCookieBanner(event)" class="text-primary underline">Cookie-Einstellungen</a>
-        </div>
+  <footer class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-white/60 text-sm">© <span id="y"></span> SPEC88. Alle Rechte vorbehalten.</p>
+      <div class="flex items-center gap-4">
+        <a target="_blank" rel="noopener" href="https://twitter.com/" class="text-white/70 hover:text-white text-sm">Twitter</a>
+        <a href="#preise" class="text-white/70 hover:text-white text-sm">Preise</a>
+        <a href="#faq" class="text-white/70 hover:text-white text-sm">FAQ</a>
       </div>
     </div>
-    <div class="container-lg mt-8 text-white/60 text-xs">© 2025 SPEC88 – Alle Rechte vorbehalten.</div>
   </footer>
 
-  <!-- Modals -->
-  <dialog id="impressumModal" class="w-[min(900px,92vw)] rounded-2xl p-0 bg-background border border-white/10">
-    <div class="p-6 space-y-3">
-      <div class="flex items-center justify-between">
-        <h3 class="text-xl font-semibold">Impressum</h3>
-        <button onclick="closeModal('impressumModal')" class="px-3 py-1 rounded-lg border border-white/10 hover:border-primary/50">Schließen</button>
-      </div>
-      <div class="text-white/80 text-sm">
-        SPEC88 – David Yurko<br/>
-        Tulpenstraße 4, 63128 Dietzenbach, Deutschland<br/>
-        Telefon: +49 …621<br/>
-        E-Mail: hello@spec88.com<br/>
-        Verantwortlich gemäß § 5 TMG: David Yurko
-      </div>
-    </div>
-  </dialog>
+  <!-- JSON-LD Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SPEC88",
+    "url": "https://spec88.com",
+    "logo": "https://spec88.com/icon.png",
+    "sameAs": ["https://twitter.com/"]
+  }
+  </script>
 
-  <dialog id="datenschutzModal" class="w-[min(900px,92vw)] rounded-2xl p-0 bg-background border border-white/10">
-    <div class="p-6 space-y-3">
-      <div class="flex items-center justify-between">
-        <h3 class="text-xl font-semibold">Datenschutzerklärung</h3>
-        <button onclick="closeModal('datenschutzModal')" class="px-3 py-1 rounded-lg border border-white/10 hover:border-primary/50">Schließen</button>
-      </div>
-      <div class="text-white/80 text-sm space-y-3">
-        <p><strong>Verantwortlicher:</strong> SPEC88 – David Yurko, Tulpenstraße 4, 63128 Dietzenbach, Deutschland – E-Mail: hello@spec88.com – Tel: +49 …621.</p>
-        <p><strong>Zwecke & Rechtsgrundlagen:</strong> Bearbeitung von Anfragen/Projekten (Art. 6 Abs. 1 lit. b DSGVO), technischer Betrieb/IT-Sicherheit (Art. 6 Abs. 1 lit. f DSGVO). Statistik/Marketing nur nach Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).</p>
-        <p><strong>Empfänger & Auftragsverarbeiter:</strong> Hosting & Infrastruktur innerhalb der EU. Eine Übermittlung an Dritte erfolgt nur, soweit für den Betrieb erforderlich und mit AV-Vertrag.</p>
-        <p><strong>Speicherdauer:</strong> Kontaktdaten bis Abschluss der Anfrage bzw. gesetzlicher Aufbewahrung; Protokolldaten werden regelmäßig gelöscht.</p>
-        <p><strong>Cookies & Einwilligung:</strong> Essentielle Cookies sind erforderlich. Statistik/Marketing-Cookies werden erst nach Opt-in gesetzt (Consent-Banner). Widerruf jederzeit möglich.</p>
-        <p><strong>Betroffenenrechte:</strong> Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf, Beschwerde bei einer Aufsichtsbehörde.</p>
-      </div>
-    </div>
-  </dialog>
-
-  <!-- Cookie Banner -->
-  <dialog id="cookieBanner" class="w-[min(900px,92vw)] rounded-2xl p-0 bg-background border border-white/10">
-    <form method="dialog" class="p-6">
-      <h3 class="text-xl font-semibold">Cookie-Einstellungen</h3>
-      <p class="text-white/80 text-sm mt-2">Wir verwenden Cookies für den zuverlässigen Betrieb dieser Website. Statistik/Marketing werden nur nach deiner Einwilligung gesetzt.</p>
-      <div class="grid md:grid-cols-3 gap-4 mt-4">
-        <div class="glass rounded-2xl p-4">
-          <div class="font-semibold">Essentiell</div>
-          <p class="text-white/70 text-sm">Erforderlich für Grundfunktionen. Immer aktiv.</p>
-          <label class="mt-2 inline-flex items-center gap-2 text-white/60 text-sm"><input type="checkbox" checked disabled /> Aktiv</label>
-        </div>
-        <div class="glass rounded-2xl p-4">
-          <div class="font-semibold">Statistik</div>
-          <p class="text-white/70 text-sm">Anonyme Nutzungsstatistiken.</p>
-          <label class="mt-2 inline-flex items-center gap-2 text-white/60 text-sm"><input id="consentStats" type="checkbox" /> Zustimmen</label>
-        </div>
-        <div class="glass rounded-2xl p-4">
-          <div class="font-semibold">Marketing</div>
-          <p class="text-white/70 text-sm">Marketing-/Remarketing-Funktionen.</p>
-          <label class="mt-2 inline-flex items-center gap-2 text-white/60 text-sm"><input id="consentMkt" type="checkbox" /> Zustimmen</label>
-        </div>
-      </div>
-      <div class="flex flex-col sm:flex-row gap-3 justify-end mt-6">
-        <button value="reject" class="px-5 py-2 rounded-full border border-white/10 hover:border-primary/50">Nur Essentiell</button>
-        <button value="accept" class="btn bg-primary text-background font-semibold px-5 py-2 hover:bg-hover">Alle akzeptieren</button>
-        <button value="save" class="px-5 py-2 rounded-full border border-white/10 hover:border-primary/50">Auswahl speichern</button>
-      </div>
-    </form>
-  </dialog>
-
-  <!-- JS -->
   <script>
-    function openImpressum(e){ e?.preventDefault(); document.getElementById('impressumModal').showModal(); }
-    function openDatenschutz(e){ e?.preventDefault(); document.getElementById('datenschutzModal').showModal(); }
-    function closeModal(id){ document.getElementById(id).close(); }
-    function openCookieBanner(e){ e?.preventDefault(); document.getElementById('cookieBanner').showModal(); }
-
-    // Formspree
-    const FORMSPREE_ENDPOINT = "https://formspree.io/f/mvgqewzy";
-    const form = document.getElementById('contactForm');
-    async function sendFormspree(data){
-      return fetch(FORMSPREE_ENDPOINT, { method: 'POST', headers: { 'Accept': 'application/json' }, body: data });
-    }
-    form?.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const hp = document.getElementById('website');
-      if (hp && hp.value) return; // Honeypot
-      const consent = document.getElementById('consent')?.checked;
-      if (!consent) { alert('Bitte stimme der Datenverarbeitung zu.'); return; }
-      const fd = new FormData(form);
-      fd.append('_subject', 'Neue Nachricht über SPEC88.com');
-      fd.append('_language', 'de');
-      try {
-        const r = await sendFormspree(fd);
-        if (r.ok) { form.reset(); alert('Danke! Deine Nachricht wurde versendet. Wir melden uns in Kürze.'); }
-        else { alert('Senden fehlgeschlagen. Bitte schreibe direkt an hello@spec88.com.'); }
-      } catch(err){ console.error(err); alert('Netzwerkfehler. Bitte später erneut versuchen oder an hello@spec88.com schreiben.'); }
-    });
+    // year in footer
+    document.getElementById('y').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
